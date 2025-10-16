@@ -66,14 +66,33 @@ class SimpleForceGraph {
     this.dpr = window.devicePixelRatio || 1;
     this.idleFrames = 0;
     this.running = false;
+    this.scale = 1;
+    this.minScale = 0.35;
+    this.maxScale = 3;
+    this.offsetX = 0;
+    this.offsetY = 0;
+    this.isDraggingNode = false;
+    this.draggedNode = null;
+    this.isPanning = false;
+    this.pointerLast = { x: 0, y: 0 };
+  this.simulationEnabled = true;
+  this.layoutSettled = false;
     this.handleResize = this.handleResize.bind(this);
     this.onPointerMove = this.onPointerMove.bind(this);
     this.onPointerLeave = this.onPointerLeave.bind(this);
     this.onPointerClick = this.onPointerClick.bind(this);
+    this.onPointerDown = this.onPointerDown.bind(this);
+    this.onPointerUp = this.onPointerUp.bind(this);
+    this.onWheel = this.onWheel.bind(this);
     window.addEventListener('resize', this.handleResize);
     this.canvas.addEventListener('mousemove', this.onPointerMove);
     this.canvas.addEventListener('mouseleave', this.onPointerLeave);
     this.canvas.addEventListener('click', this.onPointerClick);
+    this.canvas.addEventListener('mousedown', this.onPointerDown);
+    this.canvas.addEventListener('wheel', this.onWheel, { passive: false });
+    window.addEventListener('mouseup', this.onPointerUp);
+    window.addEventListener('blur', this.onPointerUp);
+    this.canvas.style.cursor = 'grab';
     this.handleResize();
   }
 
@@ -83,6 +102,10 @@ class SimpleForceGraph {
     this.canvas.removeEventListener('mousemove', this.onPointerMove);
     this.canvas.removeEventListener('mouseleave', this.onPointerLeave);
     this.canvas.removeEventListener('click', this.onPointerClick);
+    this.canvas.removeEventListener('mousedown', this.onPointerDown);
+    this.canvas.removeEventListener('wheel', this.onWheel);
+    window.removeEventListener('mouseup', this.onPointerUp);
+    window.removeEventListener('blur', this.onPointerUp);
     this.mount.innerHTML = '';
     this.nodes = [];
     this.links = [];
@@ -102,6 +125,7 @@ class SimpleForceGraph {
   }
 
   setData(rawNodes, rawLinks) {
+    this.stop();
     const existing = new Map(this.nodes.map((node) => [node.id, node]));
     const baseNodes = rawNodes.map((node) => {
       const previous = existing.get(node.id);
@@ -139,11 +163,32 @@ class SimpleForceGraph {
     this.links = links;
     this.hoverNode = null;
     this.tooltip.classList.add('hidden');
+    this.simulationEnabled = this.nodes.length > 0;
+    this.layoutSettled = false;
+    this.idleFrames = 0;
     if (!this.nodes.length) {
-      this.stop();
+      this.layoutSettled = true;
+      this.simulationEnabled = false;
       this.draw();
       return;
     }
+    if (!existing.size && this.nodes.length) {
+      let minX = Infinity;
+      let maxX = -Infinity;
+      let minY = Infinity;
+      let maxY = -Infinity;
+      for (const node of this.nodes) {
+        minX = Math.min(minX, node.x);
+        maxX = Math.max(maxX, node.x);
+        minY = Math.min(minY, node.y);
+        maxY = Math.max(maxY, node.y);
+      }
+      const centerX = (minX + maxX) / 2;
+      const centerY = (minY + maxY) / 2;
+      this.offsetX = this.width / 2 - centerX * this.scale;
+      this.offsetY = this.height / 2 - centerY * this.scale;
+    }
+    this.canvas.style.cursor = 'grab';
     this.draw();
     this.start();
   }
@@ -153,7 +198,48 @@ class SimpleForceGraph {
     this.draw();
   }
 
+  getPointerPosition(event) {
+    const rect = this.canvas.getBoundingClientRect();
+    return {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    };
+  }
+
+  toWorld(x, y) {
+    return {
+      x: (x - this.offsetX) / this.scale,
+      y: (y - this.offsetY) / this.scale,
+    };
+  }
+
+  toScreen(x, y) {
+    return {
+      x: x * this.scale + this.offsetX,
+      y: y * this.scale + this.offsetY,
+    };
+  }
+
+  findNearestNode(worldX, worldY) {
+    let nearest = null;
+    let nearestDistance = Infinity;
+    for (const node of this.nodes) {
+      const dx = worldX - node.x;
+      const dy = worldY - node.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < nearestDistance) {
+        nearest = node;
+        nearestDistance = distance;
+      }
+    }
+    return { node: nearest, distance: nearestDistance };
+  }
+
   start() {
+    if (!this.simulationEnabled) {
+      this.running = false;
+      return;
+    }
     if (this.animationFrame) cancelAnimationFrame(this.animationFrame);
     this.running = true;
     this.idleFrames = 0;
@@ -167,7 +253,10 @@ class SimpleForceGraph {
       if (this.running) {
         if (this.idleFrames > 180) {
           this.running = false;
+          this.simulationEnabled = false;
+          this.layoutSettled = true;
           this.animationFrame = null;
+          return;
         } else {
           this.animationFrame = requestAnimationFrame(tick);
         }
@@ -267,6 +356,9 @@ class SimpleForceGraph {
     const ctx = this.ctx;
     ctx.save();
     ctx.clearRect(0, 0, this.width, this.height);
+    ctx.save();
+    ctx.translate(this.offsetX, this.offsetY);
+    ctx.scale(this.scale, this.scale);
 
     ctx.globalAlpha = 0.7;
     ctx.lineCap = 'round';
@@ -303,53 +395,130 @@ class SimpleForceGraph {
         ctx.stroke();
       }
       if (node.kind === 'group') {
-        ctx.shadowColor = 'transparent';
-        ctx.fillStyle = 'rgba(15,23,42,0.9)';
-        ctx.font = '12px "Inter", "Segoe UI", sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(node.label ?? node.id, node.x, node.y - radius - 8);
+        const label = node.label ?? node.id;
+        if (label) {
+          ctx.shadowColor = 'transparent';
+          ctx.font = '13px "Inter", "Segoe UI", sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'bottom';
+          const textY = node.y - radius - 8;
+          const metrics = ctx.measureText(label);
+          const textHeight = (metrics.actualBoundingBoxAscent ?? 9) + (metrics.actualBoundingBoxDescent ?? 3);
+          const paddingX = 6;
+          const paddingY = 4;
+          const rectX = node.x - metrics.width / 2 - paddingX;
+          const rectY = textY - textHeight - paddingY;
+          const rectWidth = metrics.width + paddingX * 2;
+          const rectHeight = textHeight + paddingY * 2;
+          ctx.fillStyle = 'rgba(15, 23, 42, 0.82)';
+          ctx.fillRect(rectX, rectY, rectWidth, rectHeight);
+          ctx.strokeStyle = 'rgba(148, 163, 184, 0.35)';
+          ctx.lineWidth = 1;
+          ctx.strokeRect(rectX, rectY, rectWidth, rectHeight);
+          ctx.lineWidth = 3;
+          ctx.strokeStyle = 'rgba(15, 23, 42, 0.85)';
+          ctx.strokeText(label, node.x, textY);
+          ctx.fillStyle = '#f8fafc';
+          ctx.fillText(label, node.x, textY);
+        }
       }
     }
+    ctx.restore();
     ctx.restore();
   }
 
   onPointerMove(event) {
-    const rect = this.canvas.getBoundingClientRect();
-    const pointerX = event.clientX - rect.left;
-    const pointerY = event.clientY - rect.top;
-    const threshold = 18;
-    let nearest = null;
-    let nearestDistance = Infinity;
-    for (const node of this.nodes) {
-      const dx = pointerX - node.x;
-      const dy = pointerY - node.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      if (distance < Math.max(threshold, node.radius + 6) && distance < nearestDistance) {
-        nearest = node;
-        nearestDistance = distance;
-      }
+    const pointer = this.getPointerPosition(event);
+
+    if (this.isDraggingNode && this.draggedNode) {
+      const world = this.toWorld(pointer.x, pointer.y);
+      this.draggedNode.x = world.x;
+      this.draggedNode.y = world.y;
+      this.draggedNode.vx = 0;
+      this.draggedNode.vy = 0;
+      this.idleFrames = 0;
+      this.hoverNode = this.draggedNode;
+      this.tooltip.classList.add('hidden');
+      this.start();
+      return;
     }
 
-    if (nearest) {
-      this.hoverNode = nearest;
-      this.tooltip.classList.remove('hidden');
-      const clampedX = Math.max(12, Math.min(this.width - 12, nearest.x));
-      const clampedY = Math.max(24, Math.min(this.height - 12, nearest.y));
-      this.tooltip.style.left = `${clampedX}px`;
-      this.tooltip.style.top = `${clampedY}px`;
-      this.tooltip.innerHTML = this.buildTooltip(nearest);
-      this.draw();
-    } else {
+    if (this.isPanning) {
+      const dx = pointer.x - this.pointerLast.x;
+      const dy = pointer.y - this.pointerLast.y;
+      this.pointerLast = pointer;
+      this.offsetX += dx;
+      this.offsetY += dy;
       this.hoverNode = null;
       this.tooltip.classList.add('hidden');
       this.draw();
+      return;
     }
+
+    const world = this.toWorld(pointer.x, pointer.y);
+    const { node, distance } = this.findNearestNode(world.x, world.y);
+    const hoverThreshold = node ? (node.radius + 8) : 18;
+
+    if (node && distance < hoverThreshold) {
+      this.hoverNode = node;
+      const screen = this.toScreen(node.x, node.y);
+      const clampedX = Math.max(12, Math.min(this.width - 12, screen.x));
+      const clampedY = Math.max(24, Math.min(this.height - 12, screen.y));
+      this.tooltip.classList.remove('hidden');
+      this.tooltip.style.left = `${clampedX}px`;
+      this.tooltip.style.top = `${clampedY}px`;
+      this.tooltip.innerHTML = this.buildTooltip(node);
+      this.canvas.style.cursor = 'pointer';
+    } else {
+      this.hoverNode = null;
+      this.tooltip.classList.add('hidden');
+      this.canvas.style.cursor = 'grab';
+    }
+    this.draw();
   }
 
   onPointerLeave() {
     this.hoverNode = null;
     this.tooltip.classList.add('hidden');
+    if (!this.isDraggingNode && !this.isPanning) {
+      this.canvas.style.cursor = 'grab';
+    }
     this.draw();
+  }
+
+  onPointerDown(event) {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    const pointer = this.getPointerPosition(event);
+    const world = this.toWorld(pointer.x, pointer.y);
+    const { node, distance } = this.findNearestNode(world.x, world.y);
+    const threshold = node ? node.radius + 8 : Infinity;
+    this.pointerLast = pointer;
+    this.tooltip.classList.add('hidden');
+    this.simulationEnabled = false;
+    this.layoutSettled = true;
+    this.stop();
+    if (node && distance < threshold) {
+      this.isDraggingNode = true;
+      this.draggedNode = node;
+      this.canvas.style.cursor = 'grabbing';
+      node.vx = 0;
+      node.vy = 0;
+      this.idleFrames = 0;
+    } else {
+      this.isPanning = true;
+      this.draggedNode = null;
+      this.canvas.style.cursor = 'grabbing';
+    }
+  }
+
+  onPointerUp() {
+    if (this.isDraggingNode || this.isPanning) {
+      this.isDraggingNode = false;
+      this.isPanning = false;
+      this.draggedNode = null;
+      this.canvas.style.cursor = 'grab';
+    }
   }
 
   onPointerClick() {
@@ -357,6 +526,26 @@ class SimpleForceGraph {
     if (typeof this.options.onNodeClick === 'function') {
       this.options.onNodeClick(this.hoverNode);
     }
+  }
+
+  onWheel(event) {
+    event.preventDefault();
+    const pointer = this.getPointerPosition(event);
+    const worldBefore = this.toWorld(pointer.x, pointer.y);
+    const zoomScale = Math.exp(-event.deltaY * 0.0015);
+    const newScale = Math.min(this.maxScale, Math.max(this.minScale, this.scale * zoomScale));
+    if (Number.isNaN(newScale) || newScale === this.scale) {
+      this.draw();
+      return;
+    }
+    this.scale = newScale;
+    this.offsetX = pointer.x - worldBefore.x * this.scale;
+    this.offsetY = pointer.y - worldBefore.y * this.scale;
+    this.tooltip.classList.add('hidden');
+    this.hoverNode = null;
+    this.canvas.style.cursor = 'grab';
+    this.draw();
+    this.start();
   }
 
   buildTooltip(node) {
