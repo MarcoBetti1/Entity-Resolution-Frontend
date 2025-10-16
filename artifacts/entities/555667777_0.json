@@ -1,0 +1,200 @@
+{
+  "group_id": "555667777_0",
+  "canonical_attributes": {
+    "name": "priyapatel",
+    "email": "priyapatel@businessmail.com",
+    "phone": "5555678901",
+    "address": "88lakeviewboulevardchicagoil",
+    "tax_id": "555667777"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0004_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Priya Patel",
+        "email": "priya.patel@businessmail.com",
+        "phone": "555-567-8901",
+        "address": "88 Lakeview Boulevard, Chicago, IL",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "priyapatel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevardchicagoil",
+        "tax_id": "555667777"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000007",
+          "direction": "incoming",
+          "counterparty_id": "customer_0004_var001",
+          "amount": 1500.0,
+          "currency": "EUR",
+          "timestamp": "2024-11-27T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "priyapatel::88lakeviewboulevardchicagoil"
+      ]
+    },
+    {
+      "record_id": "counterparty_0004_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Patel, Priya",
+        "email": "priya.patel@businessmail.com",
+        "phone": "555-567-8901",
+        "address": "88 Lakeview Boulevard, Chicago, IL",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "patelpriya",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevardchicagoil",
+        "tax_id": "555667777"
+      },
+      "transactions": [],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "patelpriya::88lakeviewboulevardchicagoil"
+      ]
+    },
+    {
+      "record_id": "counterparty_0004_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Priya Patel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "(555) 567-8901",
+        "address": "88 Lakeview Boulevard",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "priyapatel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevard",
+        "tax_id": "555667777"
+      },
+      "transactions": [],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "priyapatel::88lakeviewboulevard"
+      ]
+    },
+    {
+      "record_id": "customer_0004_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Priya Patel",
+        "email": "priya.patel@businessmail.com",
+        "phone": "555-567-8901",
+        "address": "88 Lakeview Boulevard, Chicago, IL",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "priyapatel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevardchicagoil",
+        "tax_id": "555667777"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000007",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0004_var001",
+          "amount": 1500.0,
+          "currency": "EUR",
+          "timestamp": "2024-11-27T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "priyapatel::88lakeviewboulevardchicagoil"
+      ]
+    },
+    {
+      "record_id": "customer_0004_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Patel, Priya",
+        "email": "priya.patel@businessmail.com",
+        "phone": "555-567-8901",
+        "address": "88 Lakeview Boulevard, Chicago, IL",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "patelpriya",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevardchicagoil",
+        "tax_id": "555667777"
+      },
+      "transactions": [],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "patelpriya::88lakeviewboulevardchicagoil"
+      ]
+    },
+    {
+      "record_id": "customer_0004_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Priya Patel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "(555) 567-8901",
+        "address": "88 Lakeview Boulevard",
+        "tax_id": "555667777"
+      },
+      "normalized_attributes": {
+        "name": "priyapatel",
+        "email": "priyapatel@businessmail.com",
+        "phone": "5555678901",
+        "address": "88lakeviewboulevard",
+        "tax_id": "555667777"
+      },
+      "transactions": [],
+      "signature_history": [
+        "555667777",
+        "priyapatel@businessmail.com::5555678901",
+        "priyapatel::88lakeviewboulevard"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000007",
+      "direction": "incoming",
+      "counterparty_id": "customer_0004_var001",
+      "amount": 1500.0,
+      "currency": "EUR",
+      "timestamp": "2024-11-27T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000007",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0004_var001",
+      "amount": 1500.0,
+      "currency": "EUR",
+      "timestamp": "2024-11-27T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0004_var001": "priyapatel::88lakeviewboulevardchicagoil",
+    "counterparty_0004_var002": "patelpriya::88lakeviewboulevardchicagoil",
+    "counterparty_0004_var003": "priyapatel::88lakeviewboulevard",
+    "customer_0004_var001": "priyapatel::88lakeviewboulevardchicagoil",
+    "customer_0004_var002": "patelpriya::88lakeviewboulevardchicagoil",
+    "customer_0004_var003": "priyapatel::88lakeviewboulevard"
+  }
+}

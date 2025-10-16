@@ -1,0 +1,275 @@
+{
+  "group_id": "246813579_0",
+  "canonical_attributes": {
+    "name": "marcuslee",
+    "email": "marcuslee@inbox.org",
+    "phone": "5553245678",
+    "address": "210maplecourtminneapolismn",
+    "tax_id": "246813579"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0011_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000022",
+          "direction": "incoming",
+          "counterparty_id": "customer_0011_var001",
+          "amount": 2550.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-13T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "counterparty_0011_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Lee, Marcus",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "leemarcus",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "leemarcus::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "counterparty_0011_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcuslee@inbox.org",
+        "phone": "(555) 324-5678",
+        "address": "210 Maple Court",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourt",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourt"
+      ]
+    },
+    {
+      "record_id": "customer_0011_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000022",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0011_var001",
+          "amount": 2550.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-13T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "customer_0011_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lee, Marcus",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "leemarcus",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "leemarcus::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "customer_0011_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcuslee@inbox.org",
+        "phone": "(555) 324-5678",
+        "address": "210 Maple Court",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourt",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourt"
+      ]
+    },
+    {
+      "record_id": "customer_0031_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "customer_0031_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lee, Marcus",
+        "email": "marcus.lee@inbox.org",
+        "phone": "555-324-5678",
+        "address": "210 Maple Court, Minneapolis, MN",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "leemarcus",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourtminneapolismn",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "leemarcus::210maplecourtminneapolismn"
+      ]
+    },
+    {
+      "record_id": "customer_0031_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Marcus Lee",
+        "email": "marcuslee@inbox.org",
+        "phone": "(555) 324-5678",
+        "address": "210 Maple Court",
+        "tax_id": "246813579"
+      },
+      "normalized_attributes": {
+        "name": "marcuslee",
+        "email": "marcuslee@inbox.org",
+        "phone": "5553245678",
+        "address": "210maplecourt",
+        "tax_id": "246813579"
+      },
+      "transactions": [],
+      "signature_history": [
+        "246813579",
+        "marcuslee@inbox.org::5553245678",
+        "marcuslee::210maplecourt"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000022",
+      "direction": "incoming",
+      "counterparty_id": "customer_0011_var001",
+      "amount": 2550.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-13T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000022",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0011_var001",
+      "amount": 2550.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-13T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0011_var001": "marcuslee::210maplecourtminneapolismn",
+    "counterparty_0011_var002": "leemarcus::210maplecourtminneapolismn",
+    "counterparty_0011_var003": "marcuslee::210maplecourt",
+    "customer_0011_var001": "marcuslee::210maplecourtminneapolismn",
+    "customer_0011_var002": "leemarcus::210maplecourtminneapolismn",
+    "customer_0011_var003": "marcuslee::210maplecourt",
+    "customer_0031_var001": "marcuslee::210maplecourtminneapolismn",
+    "customer_0031_var002": "leemarcus::210maplecourtminneapolismn",
+    "customer_0031_var003": "marcuslee::210maplecourt"
+  }
+}

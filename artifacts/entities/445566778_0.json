@@ -1,0 +1,275 @@
+{
+  "group_id": "445566778_0",
+  "canonical_attributes": {
+    "name": "lisawong",
+    "email": "lisawong@example.net",
+    "phone": "5557689012",
+    "address": "602coastaldrivesandiegoca",
+    "tax_id": "445566778"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0015_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000026",
+          "direction": "incoming",
+          "counterparty_id": "customer_0015_var001",
+          "amount": 3150.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-24T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "counterparty_0015_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Wong, Lisa",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "wonglisa",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "wonglisa::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "counterparty_0015_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisawong@example.net",
+        "phone": "(555) 768-9012",
+        "address": "602 Coastal Drive",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrive",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrive"
+      ]
+    },
+    {
+      "record_id": "customer_0015_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000026",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0015_var001",
+          "amount": 3150.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-24T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "customer_0015_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Wong, Lisa",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "wonglisa",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "wonglisa::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "customer_0015_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisawong@example.net",
+        "phone": "(555) 768-9012",
+        "address": "602 Coastal Drive",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrive",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrive"
+      ]
+    },
+    {
+      "record_id": "customer_0035_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "customer_0035_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Wong, Lisa",
+        "email": "lisa.wong@example.net",
+        "phone": "555-768-9012",
+        "address": "602 Coastal Drive, San Diego, CA",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "wonglisa",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrivesandiegoca",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "wonglisa::602coastaldrivesandiegoca"
+      ]
+    },
+    {
+      "record_id": "customer_0035_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lisa Wong",
+        "email": "lisawong@example.net",
+        "phone": "(555) 768-9012",
+        "address": "602 Coastal Drive",
+        "tax_id": "445566778"
+      },
+      "normalized_attributes": {
+        "name": "lisawong",
+        "email": "lisawong@example.net",
+        "phone": "5557689012",
+        "address": "602coastaldrive",
+        "tax_id": "445566778"
+      },
+      "transactions": [],
+      "signature_history": [
+        "445566778",
+        "lisawong@example.net::5557689012",
+        "lisawong::602coastaldrive"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000026",
+      "direction": "incoming",
+      "counterparty_id": "customer_0015_var001",
+      "amount": 3150.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-24T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000026",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0015_var001",
+      "amount": 3150.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-24T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0015_var001": "lisawong::602coastaldrivesandiegoca",
+    "counterparty_0015_var002": "wonglisa::602coastaldrivesandiegoca",
+    "counterparty_0015_var003": "lisawong::602coastaldrive",
+    "customer_0015_var001": "lisawong::602coastaldrivesandiegoca",
+    "customer_0015_var002": "wonglisa::602coastaldrivesandiegoca",
+    "customer_0015_var003": "lisawong::602coastaldrive",
+    "customer_0035_var001": "lisawong::602coastaldrivesandiegoca",
+    "customer_0035_var002": "wonglisa::602coastaldrivesandiegoca",
+    "customer_0035_var003": "lisawong::602coastaldrive"
+  }
+}

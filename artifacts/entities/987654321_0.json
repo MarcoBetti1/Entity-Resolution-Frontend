@@ -1,0 +1,90 @@
+{
+  "group_id": "987654321_0",
+  "canonical_attributes": {
+    "name": "horizonservices",
+    "email": "support@horizonservices.com",
+    "phone": "5550123456",
+    "address": "312summitlanedenverco",
+    "tax_id": "987654321"
+  },
+  "members": [
+    {
+      "record_id": "customer_0009_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Horizon Services",
+        "email": "support@horizonservices.com",
+        "phone": "555-012-3456",
+        "address": "312 Summit Lane, Denver, CO",
+        "tax_id": "987654321"
+      },
+      "normalized_attributes": {
+        "name": "horizonservices",
+        "email": "support@horizonservices.com",
+        "phone": "5550123456",
+        "address": "312summitlanedenverco",
+        "tax_id": "987654321"
+      },
+      "transactions": [],
+      "signature_history": [
+        "987654321",
+        "support@horizonservices.com::5550123456",
+        "horizonservices::312summitlanedenverco"
+      ]
+    },
+    {
+      "record_id": "customer_0009_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Services, Horizon",
+        "email": "support@horizonservices.com",
+        "phone": "555-012-3456",
+        "address": "312 Summit Lane, Denver, CO",
+        "tax_id": "987654321"
+      },
+      "normalized_attributes": {
+        "name": "serviceshorizon",
+        "email": "support@horizonservices.com",
+        "phone": "5550123456",
+        "address": "312summitlanedenverco",
+        "tax_id": "987654321"
+      },
+      "transactions": [],
+      "signature_history": [
+        "987654321",
+        "support@horizonservices.com::5550123456",
+        "serviceshorizon::312summitlanedenverco"
+      ]
+    },
+    {
+      "record_id": "customer_0009_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Horizon Services",
+        "email": "support@horizonservices.com",
+        "phone": "(555) 012-3456",
+        "address": "312 Summit Lane",
+        "tax_id": "987654321"
+      },
+      "normalized_attributes": {
+        "name": "horizonservices",
+        "email": "support@horizonservices.com",
+        "phone": "5550123456",
+        "address": "312summitlane",
+        "tax_id": "987654321"
+      },
+      "transactions": [],
+      "signature_history": [
+        "987654321",
+        "support@horizonservices.com::5550123456",
+        "horizonservices::312summitlane"
+      ]
+    }
+  ],
+  "transactions": [],
+  "signatures": {
+    "customer_0009_var001": "horizonservices::312summitlanedenverco",
+    "customer_0009_var002": "serviceshorizon::312summitlanedenverco",
+    "customer_0009_var003": "horizonservices::312summitlane"
+  }
+}

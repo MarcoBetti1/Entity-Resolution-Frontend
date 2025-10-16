@@ -1,0 +1,19 @@
+{
+  "run_id": "run_20251016_021006",
+  "generated_at": "2025-10-16T02:10:06.293397",
+  "total_records": 51,
+  "total_groups": 10,
+  "deterministic_thresholds": [
+    "tax_id",
+    "email_phone",
+    "name_address"
+  ],
+  "similarity_threshold": 0.9,
+  "attribute_weights": {
+    "name": 0.35,
+    "address": 0.25,
+    "email": 0.15,
+    "phone": 0.1,
+    "tax_id": 0.15
+  }
+}

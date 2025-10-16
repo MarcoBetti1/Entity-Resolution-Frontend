@@ -1,0 +1,275 @@
+{
+  "group_id": "135792468_0",
+  "canonical_attributes": {
+    "name": "lilachen",
+    "email": "lilachen@personalmail.com",
+    "phone": "5552134567",
+    "address": "55pinestreetmiamifl",
+    "tax_id": "135792468"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0010_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000021",
+          "direction": "incoming",
+          "counterparty_id": "customer_0010_var001",
+          "amount": 2400.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-18T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "counterparty_0010_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Chen, Lila",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "chenlila",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "chenlila::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "counterparty_0010_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lilachen@personalmail.com",
+        "phone": "(555) 213-4567",
+        "address": "55 Pine Street",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreet",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreet"
+      ]
+    },
+    {
+      "record_id": "customer_0010_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000021",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0010_var001",
+          "amount": 2400.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-18T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "customer_0010_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Chen, Lila",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "chenlila",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "chenlila::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "customer_0010_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lilachen@personalmail.com",
+        "phone": "(555) 213-4567",
+        "address": "55 Pine Street",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreet",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreet"
+      ]
+    },
+    {
+      "record_id": "customer_0030_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "customer_0030_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Chen, Lila",
+        "email": "lila.chen@personalmail.com",
+        "phone": "555-213-4567",
+        "address": "55 Pine Street, Miami, FL",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "chenlila",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreetmiamifl",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "chenlila::55pinestreetmiamifl"
+      ]
+    },
+    {
+      "record_id": "customer_0030_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Lila Chen",
+        "email": "lilachen@personalmail.com",
+        "phone": "(555) 213-4567",
+        "address": "55 Pine Street",
+        "tax_id": "135792468"
+      },
+      "normalized_attributes": {
+        "name": "lilachen",
+        "email": "lilachen@personalmail.com",
+        "phone": "5552134567",
+        "address": "55pinestreet",
+        "tax_id": "135792468"
+      },
+      "transactions": [],
+      "signature_history": [
+        "135792468",
+        "lilachen@personalmail.com::5552134567",
+        "lilachen::55pinestreet"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000021",
+      "direction": "incoming",
+      "counterparty_id": "customer_0010_var001",
+      "amount": 2400.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-18T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000021",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0010_var001",
+      "amount": 2400.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-18T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0010_var001": "lilachen::55pinestreetmiamifl",
+    "counterparty_0010_var002": "chenlila::55pinestreetmiamifl",
+    "counterparty_0010_var003": "lilachen::55pinestreet",
+    "customer_0010_var001": "lilachen::55pinestreetmiamifl",
+    "customer_0010_var002": "chenlila::55pinestreetmiamifl",
+    "customer_0010_var003": "lilachen::55pinestreet",
+    "customer_0030_var001": "lilachen::55pinestreetmiamifl",
+    "customer_0030_var002": "chenlila::55pinestreetmiamifl",
+    "customer_0030_var003": "lilachen::55pinestreet"
+  }
+}

@@ -1,0 +1,1350 @@
+[
+  {
+    "record_id": "business_0000_var001",
+    "entity_type": "business",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000001",
+        "direction": "incoming",
+        "counterparty_id": "customer_0000_var001",
+        "amount": 1500.0,
+        "currency": "USD",
+        "timestamp": "2024-12-27T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "business_0000_var002",
+    "entity_type": "business",
+    "attributes": {
+      "name": "JANE DOE",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "business_0000_var003",
+    "entity_type": "business",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "janedoe@example.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main Street",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreet",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreet"
+    ]
+  },
+  {
+    "record_id": "business_0001_var001",
+    "entity_type": "business",
+    "attributes": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000002",
+        "direction": "incoming",
+        "counterparty_id": "customer_0001_var001",
+        "amount": 1750.0,
+        "currency": "USD",
+        "timestamp": "2024-12-22T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "business_0001_var002",
+    "entity_type": "business",
+    "attributes": {
+      "name": "JOHN SMITH",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "business_0001_var003",
+    "entity_type": "business",
+    "attributes": {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "phone": "(555) 234-5678",
+      "address": "456 Oak Avenue",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenue",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenue"
+    ]
+  },
+  {
+    "record_id": "counterparty_0000_var001",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000003",
+        "direction": "incoming",
+        "counterparty_id": "customer_0000_var001",
+        "amount": 900.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-17T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "counterparty_0000_var002",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Doe, Jane",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "doejane",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "doejane::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "counterparty_0000_var003",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "janedoe@example.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main Street",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreet",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreet"
+    ]
+  },
+  {
+    "record_id": "counterparty_0001_var001",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000004",
+        "direction": "incoming",
+        "counterparty_id": "customer_0001_var001",
+        "amount": 1050.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-12T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "counterparty_0001_var002",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Smith, John",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "smithjohn",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "smithjohn::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "counterparty_0001_var003",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "phone": "(555) 234-5678",
+      "address": "456 Oak Avenue",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenue",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenue"
+    ]
+  },
+  {
+    "record_id": "counterparty_0002_var001",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Maria Hernandez",
+      "email": "maria.h@samplemail.com",
+      "phone": "555-345-6789",
+      "address": "789 Cedar Road, Portland, OR",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "mariahernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroadportlandor",
+      "tax_id": "333445555"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000005",
+        "direction": "incoming",
+        "counterparty_id": "customer_0002_var001",
+        "amount": 1200.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-07T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "mariahernandez::789cedarroadportlandor"
+    ]
+  },
+  {
+    "record_id": "counterparty_0002_var002",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Hernandez, Maria",
+      "email": "maria.h@samplemail.com",
+      "phone": "555-345-6789",
+      "address": "789 Cedar Road, Portland, OR",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "hernandezmaria",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroadportlandor",
+      "tax_id": "333445555"
+    },
+    "transactions": [],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "hernandezmaria::789cedarroadportlandor"
+    ]
+  },
+  {
+    "record_id": "counterparty_0002_var003",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Maria Hernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "(555) 345-6789",
+      "address": "789 Cedar Road",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "mariahernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroad",
+      "tax_id": "333445555"
+    },
+    "transactions": [],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "mariahernandez::789cedarroad"
+    ]
+  },
+  {
+    "record_id": "counterparty_0003_var001",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Tobias Reed",
+      "email": "reed.t@finmail.com",
+      "phone": "555-456-7890",
+      "address": "42 Market Street, Boston, MA",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "tobiasreed",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreetbostonma",
+      "tax_id": "444556666"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000006",
+        "direction": "incoming",
+        "counterparty_id": "customer_0003_var001",
+        "amount": 1350.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-02T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "tobiasreed::42marketstreetbostonma"
+    ]
+  },
+  {
+    "record_id": "counterparty_0003_var002",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Reed, Tobias",
+      "email": "reed.t@finmail.com",
+      "phone": "555-456-7890",
+      "address": "42 Market Street, Boston, MA",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "reedtobias",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreetbostonma",
+      "tax_id": "444556666"
+    },
+    "transactions": [],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "reedtobias::42marketstreetbostonma"
+    ]
+  },
+  {
+    "record_id": "counterparty_0003_var003",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Tobias Reed",
+      "email": "reedt@finmail.com",
+      "phone": "(555) 456-7890",
+      "address": "42 Market Street",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "tobiasreed",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreet",
+      "tax_id": "444556666"
+    },
+    "transactions": [],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "tobiasreed::42marketstreet"
+    ]
+  },
+  {
+    "record_id": "counterparty_0004_var001",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Priya Patel",
+      "email": "priya.patel@businessmail.com",
+      "phone": "555-567-8901",
+      "address": "88 Lakeview Boulevard, Chicago, IL",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "priyapatel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevardchicagoil",
+      "tax_id": "555667777"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000007",
+        "direction": "incoming",
+        "counterparty_id": "customer_0004_var001",
+        "amount": 1500.0,
+        "currency": "EUR",
+        "timestamp": "2024-11-27T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "priyapatel::88lakeviewboulevardchicagoil"
+    ]
+  },
+  {
+    "record_id": "counterparty_0004_var002",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Patel, Priya",
+      "email": "priya.patel@businessmail.com",
+      "phone": "555-567-8901",
+      "address": "88 Lakeview Boulevard, Chicago, IL",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "patelpriya",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevardchicagoil",
+      "tax_id": "555667777"
+    },
+    "transactions": [],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "patelpriya::88lakeviewboulevardchicagoil"
+    ]
+  },
+  {
+    "record_id": "counterparty_0004_var003",
+    "entity_type": "counterparty",
+    "attributes": {
+      "name": "Priya Patel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "(555) 567-8901",
+      "address": "88 Lakeview Boulevard",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "priyapatel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevard",
+      "tax_id": "555667777"
+    },
+    "transactions": [],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "priyapatel::88lakeviewboulevard"
+    ]
+  },
+  {
+    "record_id": "customer_0000_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000001",
+        "direction": "outgoing",
+        "counterparty_id": "business_0000_var001",
+        "amount": 1500.0,
+        "currency": "USD",
+        "timestamp": "2024-12-27T12:00:00"
+      },
+      {
+        "transaction_id": "txn_000003",
+        "direction": "outgoing",
+        "counterparty_id": "counterparty_0000_var001",
+        "amount": 900.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-17T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "customer_0000_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Doe, Jane",
+      "email": "jane.doe@example.com",
+      "phone": "555-123-4567",
+      "address": "123 Main Street, Springfield, IL",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "doejane",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreetspringfieldil",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "doejane::123mainstreetspringfieldil"
+    ]
+  },
+  {
+    "record_id": "customer_0000_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Jane Doe",
+      "email": "janedoe@example.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main Street",
+      "tax_id": "111223333"
+    },
+    "normalized_attributes": {
+      "name": "janedoe",
+      "email": "janedoe@example.com",
+      "phone": "5551234567",
+      "address": "123mainstreet",
+      "tax_id": "111223333"
+    },
+    "transactions": [],
+    "signature_history": [
+      "111223333",
+      "janedoe@example.com::5551234567",
+      "janedoe::123mainstreet"
+    ]
+  },
+  {
+    "record_id": "customer_0001_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000002",
+        "direction": "outgoing",
+        "counterparty_id": "business_0001_var001",
+        "amount": 1750.0,
+        "currency": "USD",
+        "timestamp": "2024-12-22T12:00:00"
+      },
+      {
+        "transaction_id": "txn_000004",
+        "direction": "outgoing",
+        "counterparty_id": "counterparty_0001_var001",
+        "amount": 1050.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-12T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "customer_0001_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Smith, John",
+      "email": "john.smith@example.com",
+      "phone": "555-234-5678",
+      "address": "456 Oak Avenue, Albany, NY",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "smithjohn",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenuealbanyny",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "smithjohn::456oakavenuealbanyny"
+    ]
+  },
+  {
+    "record_id": "customer_0001_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "phone": "(555) 234-5678",
+      "address": "456 Oak Avenue",
+      "tax_id": "222334444"
+    },
+    "normalized_attributes": {
+      "name": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phone": "5552345678",
+      "address": "456oakavenue",
+      "tax_id": "222334444"
+    },
+    "transactions": [],
+    "signature_history": [
+      "222334444",
+      "johnsmith@example.com::5552345678",
+      "johnsmith::456oakavenue"
+    ]
+  },
+  {
+    "record_id": "customer_0002_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Maria Hernandez",
+      "email": "maria.h@samplemail.com",
+      "phone": "555-345-6789",
+      "address": "789 Cedar Road, Portland, OR",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "mariahernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroadportlandor",
+      "tax_id": "333445555"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000005",
+        "direction": "outgoing",
+        "counterparty_id": "counterparty_0002_var001",
+        "amount": 1200.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-07T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "mariahernandez::789cedarroadportlandor"
+    ]
+  },
+  {
+    "record_id": "customer_0002_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Hernandez, Maria",
+      "email": "maria.h@samplemail.com",
+      "phone": "555-345-6789",
+      "address": "789 Cedar Road, Portland, OR",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "hernandezmaria",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroadportlandor",
+      "tax_id": "333445555"
+    },
+    "transactions": [],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "hernandezmaria::789cedarroadportlandor"
+    ]
+  },
+  {
+    "record_id": "customer_0002_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Maria Hernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "(555) 345-6789",
+      "address": "789 Cedar Road",
+      "tax_id": "333445555"
+    },
+    "normalized_attributes": {
+      "name": "mariahernandez",
+      "email": "mariah@samplemail.com",
+      "phone": "5553456789",
+      "address": "789cedarroad",
+      "tax_id": "333445555"
+    },
+    "transactions": [],
+    "signature_history": [
+      "333445555",
+      "mariah@samplemail.com::5553456789",
+      "mariahernandez::789cedarroad"
+    ]
+  },
+  {
+    "record_id": "customer_0003_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Tobias Reed",
+      "email": "reed.t@finmail.com",
+      "phone": "555-456-7890",
+      "address": "42 Market Street, Boston, MA",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "tobiasreed",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreetbostonma",
+      "tax_id": "444556666"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000006",
+        "direction": "outgoing",
+        "counterparty_id": "counterparty_0003_var001",
+        "amount": 1350.0,
+        "currency": "EUR",
+        "timestamp": "2024-12-02T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "tobiasreed::42marketstreetbostonma"
+    ]
+  },
+  {
+    "record_id": "customer_0003_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Reed, Tobias",
+      "email": "reed.t@finmail.com",
+      "phone": "555-456-7890",
+      "address": "42 Market Street, Boston, MA",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "reedtobias",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreetbostonma",
+      "tax_id": "444556666"
+    },
+    "transactions": [],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "reedtobias::42marketstreetbostonma"
+    ]
+  },
+  {
+    "record_id": "customer_0003_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Tobias Reed",
+      "email": "reedt@finmail.com",
+      "phone": "(555) 456-7890",
+      "address": "42 Market Street",
+      "tax_id": "444556666"
+    },
+    "normalized_attributes": {
+      "name": "tobiasreed",
+      "email": "reedt@finmail.com",
+      "phone": "5554567890",
+      "address": "42marketstreet",
+      "tax_id": "444556666"
+    },
+    "transactions": [],
+    "signature_history": [
+      "444556666",
+      "reedt@finmail.com::5554567890",
+      "tobiasreed::42marketstreet"
+    ]
+  },
+  {
+    "record_id": "customer_0004_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Priya Patel",
+      "email": "priya.patel@businessmail.com",
+      "phone": "555-567-8901",
+      "address": "88 Lakeview Boulevard, Chicago, IL",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "priyapatel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevardchicagoil",
+      "tax_id": "555667777"
+    },
+    "transactions": [
+      {
+        "transaction_id": "txn_000007",
+        "direction": "outgoing",
+        "counterparty_id": "counterparty_0004_var001",
+        "amount": 1500.0,
+        "currency": "EUR",
+        "timestamp": "2024-11-27T12:00:00"
+      }
+    ],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "priyapatel::88lakeviewboulevardchicagoil"
+    ]
+  },
+  {
+    "record_id": "customer_0004_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Patel, Priya",
+      "email": "priya.patel@businessmail.com",
+      "phone": "555-567-8901",
+      "address": "88 Lakeview Boulevard, Chicago, IL",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "patelpriya",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevardchicagoil",
+      "tax_id": "555667777"
+    },
+    "transactions": [],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "patelpriya::88lakeviewboulevardchicagoil"
+    ]
+  },
+  {
+    "record_id": "customer_0004_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Priya Patel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "(555) 567-8901",
+      "address": "88 Lakeview Boulevard",
+      "tax_id": "555667777"
+    },
+    "normalized_attributes": {
+      "name": "priyapatel",
+      "email": "priyapatel@businessmail.com",
+      "phone": "5555678901",
+      "address": "88lakeviewboulevard",
+      "tax_id": "555667777"
+    },
+    "transactions": [],
+    "signature_history": [
+      "555667777",
+      "priyapatel@businessmail.com::5555678901",
+      "priyapatel::88lakeviewboulevard"
+    ]
+  },
+  {
+    "record_id": "customer_0005_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Ahmed Khan",
+      "email": "ahmed.khan@network.com",
+      "phone": "555-678-9012",
+      "address": "17 Harbour Way, Seattle, WA",
+      "tax_id": "666778888"
+    },
+    "normalized_attributes": {
+      "name": "ahmedkhan",
+      "email": "ahmedkhan@network.com",
+      "phone": "5556789012",
+      "address": "17harbourwayseattlewa",
+      "tax_id": "666778888"
+    },
+    "transactions": [],
+    "signature_history": [
+      "666778888",
+      "ahmedkhan@network.com::5556789012",
+      "ahmedkhan::17harbourwayseattlewa"
+    ]
+  },
+  {
+    "record_id": "customer_0005_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Khan, Ahmed",
+      "email": "ahmed.khan@network.com",
+      "phone": "555-678-9012",
+      "address": "17 Harbour Way, Seattle, WA",
+      "tax_id": "666778888"
+    },
+    "normalized_attributes": {
+      "name": "khanahmed",
+      "email": "ahmedkhan@network.com",
+      "phone": "5556789012",
+      "address": "17harbourwayseattlewa",
+      "tax_id": "666778888"
+    },
+    "transactions": [],
+    "signature_history": [
+      "666778888",
+      "ahmedkhan@network.com::5556789012",
+      "khanahmed::17harbourwayseattlewa"
+    ]
+  },
+  {
+    "record_id": "customer_0005_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Ahmed Khan",
+      "email": "ahmedkhan@network.com",
+      "phone": "(555) 678-9012",
+      "address": "17 Harbour Way",
+      "tax_id": "666778888"
+    },
+    "normalized_attributes": {
+      "name": "ahmedkhan",
+      "email": "ahmedkhan@network.com",
+      "phone": "5556789012",
+      "address": "17harbourway",
+      "tax_id": "666778888"
+    },
+    "transactions": [],
+    "signature_history": [
+      "666778888",
+      "ahmedkhan@network.com::5556789012",
+      "ahmedkhan::17harbourway"
+    ]
+  },
+  {
+    "record_id": "customer_0006_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Blue Fintech",
+      "email": "info@bluefintech.com",
+      "phone": "555-789-0123",
+      "address": "901 Tech Park, Austin, TX",
+      "tax_id": "777889999"
+    },
+    "normalized_attributes": {
+      "name": "bluefintech",
+      "email": "info@bluefintech.com",
+      "phone": "5557890123",
+      "address": "901techparkaustintx",
+      "tax_id": "777889999"
+    },
+    "transactions": [],
+    "signature_history": [
+      "777889999",
+      "info@bluefintech.com::5557890123",
+      "bluefintech::901techparkaustintx"
+    ]
+  },
+  {
+    "record_id": "customer_0006_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Fintech, Blue",
+      "email": "info@bluefintech.com",
+      "phone": "555-789-0123",
+      "address": "901 Tech Park, Austin, TX",
+      "tax_id": "777889999"
+    },
+    "normalized_attributes": {
+      "name": "fintechblue",
+      "email": "info@bluefintech.com",
+      "phone": "5557890123",
+      "address": "901techparkaustintx",
+      "tax_id": "777889999"
+    },
+    "transactions": [],
+    "signature_history": [
+      "777889999",
+      "info@bluefintech.com::5557890123",
+      "fintechblue::901techparkaustintx"
+    ]
+  },
+  {
+    "record_id": "customer_0006_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Blue Fintech",
+      "email": "info@bluefintech.com",
+      "phone": "(555) 789-0123",
+      "address": "901 Tech Park",
+      "tax_id": "777889999"
+    },
+    "normalized_attributes": {
+      "name": "bluefintech",
+      "email": "info@bluefintech.com",
+      "phone": "5557890123",
+      "address": "901techpark",
+      "tax_id": "777889999"
+    },
+    "transactions": [],
+    "signature_history": [
+      "777889999",
+      "info@bluefintech.com::5557890123",
+      "bluefintech::901techpark"
+    ]
+  },
+  {
+    "record_id": "customer_0007_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Green Ventures",
+      "email": "contact@greenventures.com",
+      "phone": "555-890-1234",
+      "address": "2500 Innovation Drive, San Jose, CA",
+      "tax_id": "888990000"
+    },
+    "normalized_attributes": {
+      "name": "greenventures",
+      "email": "contact@greenventures.com",
+      "phone": "5558901234",
+      "address": "2500innovationdrivesanjoseca",
+      "tax_id": "888990000"
+    },
+    "transactions": [],
+    "signature_history": [
+      "888990000",
+      "contact@greenventures.com::5558901234",
+      "greenventures::2500innovationdrivesanjoseca"
+    ]
+  },
+  {
+    "record_id": "customer_0007_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Ventures, Green",
+      "email": "contact@greenventures.com",
+      "phone": "555-890-1234",
+      "address": "2500 Innovation Drive, San Jose, CA",
+      "tax_id": "888990000"
+    },
+    "normalized_attributes": {
+      "name": "venturesgreen",
+      "email": "contact@greenventures.com",
+      "phone": "5558901234",
+      "address": "2500innovationdrivesanjoseca",
+      "tax_id": "888990000"
+    },
+    "transactions": [],
+    "signature_history": [
+      "888990000",
+      "contact@greenventures.com::5558901234",
+      "venturesgreen::2500innovationdrivesanjoseca"
+    ]
+  },
+  {
+    "record_id": "customer_0007_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Green Ventures",
+      "email": "contact@greenventures.com",
+      "phone": "(555) 890-1234",
+      "address": "2500 Innovation Drive",
+      "tax_id": "888990000"
+    },
+    "normalized_attributes": {
+      "name": "greenventures",
+      "email": "contact@greenventures.com",
+      "phone": "5558901234",
+      "address": "2500innovationdrive",
+      "tax_id": "888990000"
+    },
+    "transactions": [],
+    "signature_history": [
+      "888990000",
+      "contact@greenventures.com::5558901234",
+      "greenventures::2500innovationdrive"
+    ]
+  },
+  {
+    "record_id": "customer_0008_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Redwood Labs",
+      "email": "hello@redwoodlabs.io",
+      "phone": "555-901-2345",
+      "address": "640 Riverfront Plaza, St. Louis, MO",
+      "tax_id": "123456789"
+    },
+    "normalized_attributes": {
+      "name": "redwoodlabs",
+      "email": "hello@redwoodlabs.io",
+      "phone": "5559012345",
+      "address": "640riverfrontplazastlouismo",
+      "tax_id": "123456789"
+    },
+    "transactions": [],
+    "signature_history": [
+      "123456789",
+      "hello@redwoodlabs.io::5559012345",
+      "redwoodlabs::640riverfrontplazastlouismo"
+    ]
+  },
+  {
+    "record_id": "customer_0008_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Labs, Redwood",
+      "email": "hello@redwoodlabs.io",
+      "phone": "555-901-2345",
+      "address": "640 Riverfront Plaza, St. Louis, MO",
+      "tax_id": "123456789"
+    },
+    "normalized_attributes": {
+      "name": "labsredwood",
+      "email": "hello@redwoodlabs.io",
+      "phone": "5559012345",
+      "address": "640riverfrontplazastlouismo",
+      "tax_id": "123456789"
+    },
+    "transactions": [],
+    "signature_history": [
+      "123456789",
+      "hello@redwoodlabs.io::5559012345",
+      "labsredwood::640riverfrontplazastlouismo"
+    ]
+  },
+  {
+    "record_id": "customer_0008_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Redwood Labs",
+      "email": "hello@redwoodlabs.io",
+      "phone": "(555) 901-2345",
+      "address": "640 Riverfront Plaza",
+      "tax_id": "123456789"
+    },
+    "normalized_attributes": {
+      "name": "redwoodlabs",
+      "email": "hello@redwoodlabs.io",
+      "phone": "5559012345",
+      "address": "640riverfrontplaza",
+      "tax_id": "123456789"
+    },
+    "transactions": [],
+    "signature_history": [
+      "123456789",
+      "hello@redwoodlabs.io::5559012345",
+      "redwoodlabs::640riverfrontplaza"
+    ]
+  },
+  {
+    "record_id": "customer_0009_var001",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Horizon Services",
+      "email": "support@horizonservices.com",
+      "phone": "555-012-3456",
+      "address": "312 Summit Lane, Denver, CO",
+      "tax_id": "987654321"
+    },
+    "normalized_attributes": {
+      "name": "horizonservices",
+      "email": "support@horizonservices.com",
+      "phone": "5550123456",
+      "address": "312summitlanedenverco",
+      "tax_id": "987654321"
+    },
+    "transactions": [],
+    "signature_history": [
+      "987654321",
+      "support@horizonservices.com::5550123456",
+      "horizonservices::312summitlanedenverco"
+    ]
+  },
+  {
+    "record_id": "customer_0009_var002",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Services, Horizon",
+      "email": "support@horizonservices.com",
+      "phone": "555-012-3456",
+      "address": "312 Summit Lane, Denver, CO",
+      "tax_id": "987654321"
+    },
+    "normalized_attributes": {
+      "name": "serviceshorizon",
+      "email": "support@horizonservices.com",
+      "phone": "5550123456",
+      "address": "312summitlanedenverco",
+      "tax_id": "987654321"
+    },
+    "transactions": [],
+    "signature_history": [
+      "987654321",
+      "support@horizonservices.com::5550123456",
+      "serviceshorizon::312summitlanedenverco"
+    ]
+  },
+  {
+    "record_id": "customer_0009_var003",
+    "entity_type": "customer",
+    "attributes": {
+      "name": "Horizon Services",
+      "email": "support@horizonservices.com",
+      "phone": "(555) 012-3456",
+      "address": "312 Summit Lane",
+      "tax_id": "987654321"
+    },
+    "normalized_attributes": {
+      "name": "horizonservices",
+      "email": "support@horizonservices.com",
+      "phone": "5550123456",
+      "address": "312summitlane",
+      "tax_id": "987654321"
+    },
+    "transactions": [],
+    "signature_history": [
+      "987654321",
+      "support@horizonservices.com::5550123456",
+      "horizonservices::312summitlane"
+    ]
+  }
+]

@@ -1,0 +1,275 @@
+{
+  "group_id": "223344556_0",
+  "canonical_attributes": {
+    "name": "summitretail",
+    "email": "sales@summitretail.com",
+    "phone": "5555467890",
+    "address": "144commerceparkwaydallastx",
+    "tax_id": "223344556"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0013_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000024",
+          "direction": "incoming",
+          "counterparty_id": "customer_0013_var001",
+          "amount": 2850.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-03T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "counterparty_0013_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Retail, Summit",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "retailsummit",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "retailsummit::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "counterparty_0013_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "(555) 546-7890",
+        "address": "144 Commerce Parkway",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkway",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkway"
+      ]
+    },
+    {
+      "record_id": "customer_0013_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000024",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0013_var001",
+          "amount": 2850.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-03T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "customer_0013_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Retail, Summit",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "retailsummit",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "retailsummit::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "customer_0013_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "(555) 546-7890",
+        "address": "144 Commerce Parkway",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkway",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkway"
+      ]
+    },
+    {
+      "record_id": "customer_0033_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "customer_0033_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Retail, Summit",
+        "email": "sales@summitretail.com",
+        "phone": "555-546-7890",
+        "address": "144 Commerce Parkway, Dallas, TX",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "retailsummit",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkwaydallastx",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "retailsummit::144commerceparkwaydallastx"
+      ]
+    },
+    {
+      "record_id": "customer_0033_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Summit Retail",
+        "email": "sales@summitretail.com",
+        "phone": "(555) 546-7890",
+        "address": "144 Commerce Parkway",
+        "tax_id": "223344556"
+      },
+      "normalized_attributes": {
+        "name": "summitretail",
+        "email": "sales@summitretail.com",
+        "phone": "5555467890",
+        "address": "144commerceparkway",
+        "tax_id": "223344556"
+      },
+      "transactions": [],
+      "signature_history": [
+        "223344556",
+        "sales@summitretail.com::5555467890",
+        "summitretail::144commerceparkway"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000024",
+      "direction": "incoming",
+      "counterparty_id": "customer_0013_var001",
+      "amount": 2850.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-03T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000024",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0013_var001",
+      "amount": 2850.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-03T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0013_var001": "summitretail::144commerceparkwaydallastx",
+    "counterparty_0013_var002": "retailsummit::144commerceparkwaydallastx",
+    "counterparty_0013_var003": "summitretail::144commerceparkway",
+    "customer_0013_var001": "summitretail::144commerceparkwaydallastx",
+    "customer_0013_var002": "retailsummit::144commerceparkwaydallastx",
+    "customer_0013_var003": "summitretail::144commerceparkway",
+    "customer_0033_var001": "summitretail::144commerceparkwaydallastx",
+    "customer_0033_var002": "retailsummit::144commerceparkwaydallastx",
+    "customer_0033_var003": "summitretail::144commerceparkway"
+  }
+}

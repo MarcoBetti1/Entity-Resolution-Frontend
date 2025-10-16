@@ -1,0 +1,308 @@
+{
+  "group_id": "222334444_0",
+  "canonical_attributes": {
+    "name": "johnsmith",
+    "email": "johnsmith@example.com",
+    "phone": "5552345678",
+    "address": "456oakavenuealbanyny",
+    "tax_id": "222334444"
+  },
+  "members": [
+    {
+      "record_id": "business_0001_var001",
+      "entity_type": "business",
+      "attributes": {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000002",
+          "direction": "incoming",
+          "counterparty_id": "customer_0001_var001",
+          "amount": 1750.0,
+          "currency": "USD",
+          "timestamp": "2024-12-22T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "business_0001_var002",
+      "entity_type": "business",
+      "attributes": {
+        "name": "JOHN SMITH",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "business_0001_var003",
+      "entity_type": "business",
+      "attributes": {
+        "name": "John Smith",
+        "email": "johnsmith@example.com",
+        "phone": "(555) 234-5678",
+        "address": "456 Oak Avenue",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenue",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenue"
+      ]
+    },
+    {
+      "record_id": "counterparty_0001_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000004",
+          "direction": "incoming",
+          "counterparty_id": "customer_0001_var001",
+          "amount": 1050.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-12T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "counterparty_0001_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Smith, John",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "smithjohn",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "smithjohn::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "counterparty_0001_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "John Smith",
+        "email": "johnsmith@example.com",
+        "phone": "(555) 234-5678",
+        "address": "456 Oak Avenue",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenue",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenue"
+      ]
+    },
+    {
+      "record_id": "customer_0001_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000002",
+          "direction": "outgoing",
+          "counterparty_id": "business_0001_var001",
+          "amount": 1750.0,
+          "currency": "USD",
+          "timestamp": "2024-12-22T12:00:00"
+        },
+        {
+          "transaction_id": "txn_000004",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0001_var001",
+          "amount": 1050.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-12T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "customer_0001_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Smith, John",
+        "email": "john.smith@example.com",
+        "phone": "555-234-5678",
+        "address": "456 Oak Avenue, Albany, NY",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "smithjohn",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenuealbanyny",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "smithjohn::456oakavenuealbanyny"
+      ]
+    },
+    {
+      "record_id": "customer_0001_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "John Smith",
+        "email": "johnsmith@example.com",
+        "phone": "(555) 234-5678",
+        "address": "456 Oak Avenue",
+        "tax_id": "222334444"
+      },
+      "normalized_attributes": {
+        "name": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone": "5552345678",
+        "address": "456oakavenue",
+        "tax_id": "222334444"
+      },
+      "transactions": [],
+      "signature_history": [
+        "222334444",
+        "johnsmith@example.com::5552345678",
+        "johnsmith::456oakavenue"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000002",
+      "direction": "incoming",
+      "counterparty_id": "customer_0001_var001",
+      "amount": 1750.0,
+      "currency": "USD",
+      "timestamp": "2024-12-22T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000004",
+      "direction": "incoming",
+      "counterparty_id": "customer_0001_var001",
+      "amount": 1050.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-12T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000002",
+      "direction": "outgoing",
+      "counterparty_id": "business_0001_var001",
+      "amount": 1750.0,
+      "currency": "USD",
+      "timestamp": "2024-12-22T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000004",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0001_var001",
+      "amount": 1050.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-12T12:00:00"
+    }
+  ],
+  "signatures": {
+    "business_0001_var001": "johnsmith::456oakavenuealbanyny",
+    "business_0001_var002": "johnsmith::456oakavenuealbanyny",
+    "business_0001_var003": "johnsmith::456oakavenue",
+    "counterparty_0001_var001": "johnsmith::456oakavenuealbanyny",
+    "counterparty_0001_var002": "smithjohn::456oakavenuealbanyny",
+    "counterparty_0001_var003": "johnsmith::456oakavenue",
+    "customer_0001_var001": "johnsmith::456oakavenuealbanyny",
+    "customer_0001_var002": "smithjohn::456oakavenuealbanyny",
+    "customer_0001_var003": "johnsmith::456oakavenue"
+  }
+}

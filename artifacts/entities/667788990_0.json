@@ -1,0 +1,275 @@
+{
+  "group_id": "667788990_0",
+  "canonical_attributes": {
+    "name": "northriversupply",
+    "email": "orders@northriversupply.com",
+    "phone": "5559801234",
+    "address": "875industrialstreetdetroitmi",
+    "tax_id": "667788990"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0017_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000028",
+          "direction": "incoming",
+          "counterparty_id": "customer_0017_var001",
+          "amount": 3450.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-14T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "counterparty_0017_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Supply, North",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "supplynorth",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "supplynorth::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "counterparty_0017_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "(555) 980-1234",
+        "address": "875 Industrial Street",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreet",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreet"
+      ]
+    },
+    {
+      "record_id": "customer_0017_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000028",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0017_var001",
+          "amount": 3450.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-14T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "customer_0017_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Supply, North",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "supplynorth",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "supplynorth::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "customer_0017_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "(555) 980-1234",
+        "address": "875 Industrial Street",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreet",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreet"
+      ]
+    },
+    {
+      "record_id": "customer_0037_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "customer_0037_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Supply, North",
+        "email": "orders@northriversupply.com",
+        "phone": "555-980-1234",
+        "address": "875 Industrial Street, Detroit, MI",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "supplynorth",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreetdetroitmi",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "supplynorth::875industrialstreetdetroitmi"
+      ]
+    },
+    {
+      "record_id": "customer_0037_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "North River Supply",
+        "email": "orders@northriversupply.com",
+        "phone": "(555) 980-1234",
+        "address": "875 Industrial Street",
+        "tax_id": "667788990"
+      },
+      "normalized_attributes": {
+        "name": "northriversupply",
+        "email": "orders@northriversupply.com",
+        "phone": "5559801234",
+        "address": "875industrialstreet",
+        "tax_id": "667788990"
+      },
+      "transactions": [],
+      "signature_history": [
+        "667788990",
+        "orders@northriversupply.com::5559801234",
+        "northriversupply::875industrialstreet"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000028",
+      "direction": "incoming",
+      "counterparty_id": "customer_0017_var001",
+      "amount": 3450.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-14T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000028",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0017_var001",
+      "amount": 3450.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-14T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0017_var001": "northriversupply::875industrialstreetdetroitmi",
+    "counterparty_0017_var002": "supplynorth::875industrialstreetdetroitmi",
+    "counterparty_0017_var003": "northriversupply::875industrialstreet",
+    "customer_0017_var001": "northriversupply::875industrialstreetdetroitmi",
+    "customer_0017_var002": "supplynorth::875industrialstreetdetroitmi",
+    "customer_0017_var003": "northriversupply::875industrialstreet",
+    "customer_0037_var001": "northriversupply::875industrialstreetdetroitmi",
+    "customer_0037_var002": "supplynorth::875industrialstreetdetroitmi",
+    "customer_0037_var003": "northriversupply::875industrialstreet"
+  }
+}

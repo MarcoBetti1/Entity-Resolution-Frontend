@@ -1,0 +1,275 @@
+{
+  "group_id": "889900112_0",
+  "canonical_attributes": {
+    "name": "aurorapayments",
+    "email": "billing@aurorapayments.com",
+    "phone": "5551023456",
+    "address": "1280capitolboulevardwashingtondc",
+    "tax_id": "889900112"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0019_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000030",
+          "direction": "incoming",
+          "counterparty_id": "customer_0019_var001",
+          "amount": 3750.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-04T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "counterparty_0019_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Payments, Aurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "paymentsaurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "paymentsaurora::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "counterparty_0019_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "(555) 102-3456",
+        "address": "1280 Capitol Boulevard",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevard",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevard"
+      ]
+    },
+    {
+      "record_id": "customer_0019_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000030",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0019_var001",
+          "amount": 3750.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-04T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "customer_0019_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Payments, Aurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "paymentsaurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "paymentsaurora::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "customer_0019_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "(555) 102-3456",
+        "address": "1280 Capitol Boulevard",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevard",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevard"
+      ]
+    },
+    {
+      "record_id": "customer_0039_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "customer_0039_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Payments, Aurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "555-102-3456",
+        "address": "1280 Capitol Boulevard, Washington, DC",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "paymentsaurora",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevardwashingtondc",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "paymentsaurora::1280capitolboulevardwashingtondc"
+      ]
+    },
+    {
+      "record_id": "customer_0039_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Aurora Payments",
+        "email": "billing@aurorapayments.com",
+        "phone": "(555) 102-3456",
+        "address": "1280 Capitol Boulevard",
+        "tax_id": "889900112"
+      },
+      "normalized_attributes": {
+        "name": "aurorapayments",
+        "email": "billing@aurorapayments.com",
+        "phone": "5551023456",
+        "address": "1280capitolboulevard",
+        "tax_id": "889900112"
+      },
+      "transactions": [],
+      "signature_history": [
+        "889900112",
+        "billing@aurorapayments.com::5551023456",
+        "aurorapayments::1280capitolboulevard"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000030",
+      "direction": "incoming",
+      "counterparty_id": "customer_0019_var001",
+      "amount": 3750.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-04T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000030",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0019_var001",
+      "amount": 3750.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-04T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0019_var001": "aurorapayments::1280capitolboulevardwashingtondc",
+    "counterparty_0019_var002": "paymentsaurora::1280capitolboulevardwashingtondc",
+    "counterparty_0019_var003": "aurorapayments::1280capitolboulevard",
+    "customer_0019_var001": "aurorapayments::1280capitolboulevardwashingtondc",
+    "customer_0019_var002": "paymentsaurora::1280capitolboulevardwashingtondc",
+    "customer_0019_var003": "aurorapayments::1280capitolboulevard",
+    "customer_0039_var001": "aurorapayments::1280capitolboulevardwashingtondc",
+    "customer_0039_var002": "paymentsaurora::1280capitolboulevardwashingtondc",
+    "customer_0039_var003": "aurorapayments::1280capitolboulevard"
+  }
+}

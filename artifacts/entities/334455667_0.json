@@ -1,0 +1,275 @@
+{
+  "group_id": "334455667_0",
+  "canonical_attributes": {
+    "name": "harborholdings",
+    "email": "invest@harborholdings.com",
+    "phone": "5556578901",
+    "address": "780atlanticavenuebrooklynny",
+    "tax_id": "334455667"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0014_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000025",
+          "direction": "incoming",
+          "counterparty_id": "customer_0014_var001",
+          "amount": 3000.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-29T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "counterparty_0014_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Holdings, Harbor",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "holdingsharbor",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "holdingsharbor::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "counterparty_0014_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "(555) 657-8901",
+        "address": "780 Atlantic Avenue",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenue",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenue"
+      ]
+    },
+    {
+      "record_id": "customer_0014_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000025",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0014_var001",
+          "amount": 3000.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-29T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "customer_0014_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Holdings, Harbor",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "holdingsharbor",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "holdingsharbor::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "customer_0014_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "(555) 657-8901",
+        "address": "780 Atlantic Avenue",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenue",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenue"
+      ]
+    },
+    {
+      "record_id": "customer_0034_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "customer_0034_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Holdings, Harbor",
+        "email": "invest@harborholdings.com",
+        "phone": "555-657-8901",
+        "address": "780 Atlantic Avenue, Brooklyn, NY",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "holdingsharbor",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenuebrooklynny",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "holdingsharbor::780atlanticavenuebrooklynny"
+      ]
+    },
+    {
+      "record_id": "customer_0034_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Harbor Holdings",
+        "email": "invest@harborholdings.com",
+        "phone": "(555) 657-8901",
+        "address": "780 Atlantic Avenue",
+        "tax_id": "334455667"
+      },
+      "normalized_attributes": {
+        "name": "harborholdings",
+        "email": "invest@harborholdings.com",
+        "phone": "5556578901",
+        "address": "780atlanticavenue",
+        "tax_id": "334455667"
+      },
+      "transactions": [],
+      "signature_history": [
+        "334455667",
+        "invest@harborholdings.com::5556578901",
+        "harborholdings::780atlanticavenue"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000025",
+      "direction": "incoming",
+      "counterparty_id": "customer_0014_var001",
+      "amount": 3000.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-29T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000025",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0014_var001",
+      "amount": 3000.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-29T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0014_var001": "harborholdings::780atlanticavenuebrooklynny",
+    "counterparty_0014_var002": "holdingsharbor::780atlanticavenuebrooklynny",
+    "counterparty_0014_var003": "harborholdings::780atlanticavenue",
+    "customer_0014_var001": "harborholdings::780atlanticavenuebrooklynny",
+    "customer_0014_var002": "holdingsharbor::780atlanticavenuebrooklynny",
+    "customer_0014_var003": "harborholdings::780atlanticavenue",
+    "customer_0034_var001": "harborholdings::780atlanticavenuebrooklynny",
+    "customer_0034_var002": "holdingsharbor::780atlanticavenuebrooklynny",
+    "customer_0034_var003": "harborholdings::780atlanticavenue"
+  }
+}

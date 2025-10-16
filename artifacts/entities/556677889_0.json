@@ -1,0 +1,275 @@
+{
+  "group_id": "556677889_0",
+  "canonical_attributes": {
+    "name": "kevinturner",
+    "email": "kturner@fastmail.com",
+    "phone": "5558790123",
+    "address": "3100logisticsloopnewarknj",
+    "tax_id": "556677889"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0016_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000027",
+          "direction": "incoming",
+          "counterparty_id": "customer_0016_var001",
+          "amount": 3300.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-19T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "counterparty_0016_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Turner, Kevin",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "turnerkevin",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "turnerkevin::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "counterparty_0016_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "(555) 879-0123",
+        "address": "3100 Logistics Loop",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloop",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloop"
+      ]
+    },
+    {
+      "record_id": "customer_0016_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000027",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0016_var001",
+          "amount": 3300.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-19T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "customer_0016_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Turner, Kevin",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "turnerkevin",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "turnerkevin::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "customer_0016_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "(555) 879-0123",
+        "address": "3100 Logistics Loop",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloop",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloop"
+      ]
+    },
+    {
+      "record_id": "customer_0036_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "customer_0036_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Turner, Kevin",
+        "email": "kturner@fastmail.com",
+        "phone": "555-879-0123",
+        "address": "3100 Logistics Loop, Newark, NJ",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "turnerkevin",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloopnewarknj",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "turnerkevin::3100logisticsloopnewarknj"
+      ]
+    },
+    {
+      "record_id": "customer_0036_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Kevin Turner",
+        "email": "kturner@fastmail.com",
+        "phone": "(555) 879-0123",
+        "address": "3100 Logistics Loop",
+        "tax_id": "556677889"
+      },
+      "normalized_attributes": {
+        "name": "kevinturner",
+        "email": "kturner@fastmail.com",
+        "phone": "5558790123",
+        "address": "3100logisticsloop",
+        "tax_id": "556677889"
+      },
+      "transactions": [],
+      "signature_history": [
+        "556677889",
+        "kturner@fastmail.com::5558790123",
+        "kevinturner::3100logisticsloop"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000027",
+      "direction": "incoming",
+      "counterparty_id": "customer_0016_var001",
+      "amount": 3300.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-19T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000027",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0016_var001",
+      "amount": 3300.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-19T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0016_var001": "kevinturner::3100logisticsloopnewarknj",
+    "counterparty_0016_var002": "turnerkevin::3100logisticsloopnewarknj",
+    "counterparty_0016_var003": "kevinturner::3100logisticsloop",
+    "customer_0016_var001": "kevinturner::3100logisticsloopnewarknj",
+    "customer_0016_var002": "turnerkevin::3100logisticsloopnewarknj",
+    "customer_0016_var003": "kevinturner::3100logisticsloop",
+    "customer_0036_var001": "kevinturner::3100logisticsloopnewarknj",
+    "customer_0036_var002": "turnerkevin::3100logisticsloopnewarknj",
+    "customer_0036_var003": "kevinturner::3100logisticsloop"
+  }
+}

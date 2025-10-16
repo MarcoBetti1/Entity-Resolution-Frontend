@@ -1,0 +1,275 @@
+{
+  "group_id": "112233445_0",
+  "canonical_attributes": {
+    "name": "stellarfreight",
+    "email": "ops@stellarfreight.com",
+    "phone": "5554356789",
+    "address": "932warehouseroadmemphistn",
+    "tax_id": "112233445"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0012_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000023",
+          "direction": "incoming",
+          "counterparty_id": "customer_0012_var001",
+          "amount": 2700.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-08T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "counterparty_0012_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Freight, Stellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "freightstellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "freightstellar::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "counterparty_0012_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "(555) 435-6789",
+        "address": "932 Warehouse Road",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroad",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroad"
+      ]
+    },
+    {
+      "record_id": "customer_0012_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000023",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0012_var001",
+          "amount": 2700.0,
+          "currency": "EUR",
+          "timestamp": "2024-09-08T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "customer_0012_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Freight, Stellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "freightstellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "freightstellar::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "customer_0012_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "(555) 435-6789",
+        "address": "932 Warehouse Road",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroad",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroad"
+      ]
+    },
+    {
+      "record_id": "customer_0032_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "customer_0032_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Freight, Stellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "555-435-6789",
+        "address": "932 Warehouse Road, Memphis, TN",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "freightstellar",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroadmemphistn",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "freightstellar::932warehouseroadmemphistn"
+      ]
+    },
+    {
+      "record_id": "customer_0032_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Stellar Freight",
+        "email": "ops@stellarfreight.com",
+        "phone": "(555) 435-6789",
+        "address": "932 Warehouse Road",
+        "tax_id": "112233445"
+      },
+      "normalized_attributes": {
+        "name": "stellarfreight",
+        "email": "ops@stellarfreight.com",
+        "phone": "5554356789",
+        "address": "932warehouseroad",
+        "tax_id": "112233445"
+      },
+      "transactions": [],
+      "signature_history": [
+        "112233445",
+        "ops@stellarfreight.com::5554356789",
+        "stellarfreight::932warehouseroad"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000023",
+      "direction": "incoming",
+      "counterparty_id": "customer_0012_var001",
+      "amount": 2700.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-08T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000023",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0012_var001",
+      "amount": 2700.0,
+      "currency": "EUR",
+      "timestamp": "2024-09-08T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0012_var001": "stellarfreight::932warehouseroadmemphistn",
+    "counterparty_0012_var002": "freightstellar::932warehouseroadmemphistn",
+    "counterparty_0012_var003": "stellarfreight::932warehouseroad",
+    "customer_0012_var001": "stellarfreight::932warehouseroadmemphistn",
+    "customer_0012_var002": "freightstellar::932warehouseroadmemphistn",
+    "customer_0012_var003": "stellarfreight::932warehouseroad",
+    "customer_0032_var001": "stellarfreight::932warehouseroadmemphistn",
+    "customer_0032_var002": "freightstellar::932warehouseroadmemphistn",
+    "customer_0032_var003": "stellarfreight::932warehouseroad"
+  }
+}

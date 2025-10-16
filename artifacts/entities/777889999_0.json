@@ -1,0 +1,90 @@
+{
+  "group_id": "777889999_0",
+  "canonical_attributes": {
+    "name": "bluefintech",
+    "email": "info@bluefintech.com",
+    "phone": "5557890123",
+    "address": "901techparkaustintx",
+    "tax_id": "777889999"
+  },
+  "members": [
+    {
+      "record_id": "customer_0006_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Blue Fintech",
+        "email": "info@bluefintech.com",
+        "phone": "555-789-0123",
+        "address": "901 Tech Park, Austin, TX",
+        "tax_id": "777889999"
+      },
+      "normalized_attributes": {
+        "name": "bluefintech",
+        "email": "info@bluefintech.com",
+        "phone": "5557890123",
+        "address": "901techparkaustintx",
+        "tax_id": "777889999"
+      },
+      "transactions": [],
+      "signature_history": [
+        "777889999",
+        "info@bluefintech.com::5557890123",
+        "bluefintech::901techparkaustintx"
+      ]
+    },
+    {
+      "record_id": "customer_0006_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Fintech, Blue",
+        "email": "info@bluefintech.com",
+        "phone": "555-789-0123",
+        "address": "901 Tech Park, Austin, TX",
+        "tax_id": "777889999"
+      },
+      "normalized_attributes": {
+        "name": "fintechblue",
+        "email": "info@bluefintech.com",
+        "phone": "5557890123",
+        "address": "901techparkaustintx",
+        "tax_id": "777889999"
+      },
+      "transactions": [],
+      "signature_history": [
+        "777889999",
+        "info@bluefintech.com::5557890123",
+        "fintechblue::901techparkaustintx"
+      ]
+    },
+    {
+      "record_id": "customer_0006_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Blue Fintech",
+        "email": "info@bluefintech.com",
+        "phone": "(555) 789-0123",
+        "address": "901 Tech Park",
+        "tax_id": "777889999"
+      },
+      "normalized_attributes": {
+        "name": "bluefintech",
+        "email": "info@bluefintech.com",
+        "phone": "5557890123",
+        "address": "901techpark",
+        "tax_id": "777889999"
+      },
+      "transactions": [],
+      "signature_history": [
+        "777889999",
+        "info@bluefintech.com::5557890123",
+        "bluefintech::901techpark"
+      ]
+    }
+  ],
+  "transactions": [],
+  "signatures": {
+    "customer_0006_var001": "bluefintech::901techparkaustintx",
+    "customer_0006_var002": "fintechblue::901techparkaustintx",
+    "customer_0006_var003": "bluefintech::901techpark"
+  }
+}

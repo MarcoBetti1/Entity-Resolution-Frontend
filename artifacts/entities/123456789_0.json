@@ -1,0 +1,90 @@
+{
+  "group_id": "123456789_0",
+  "canonical_attributes": {
+    "name": "redwoodlabs",
+    "email": "hello@redwoodlabs.io",
+    "phone": "5559012345",
+    "address": "640riverfrontplazastlouismo",
+    "tax_id": "123456789"
+  },
+  "members": [
+    {
+      "record_id": "customer_0008_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Redwood Labs",
+        "email": "hello@redwoodlabs.io",
+        "phone": "555-901-2345",
+        "address": "640 Riverfront Plaza, St. Louis, MO",
+        "tax_id": "123456789"
+      },
+      "normalized_attributes": {
+        "name": "redwoodlabs",
+        "email": "hello@redwoodlabs.io",
+        "phone": "5559012345",
+        "address": "640riverfrontplazastlouismo",
+        "tax_id": "123456789"
+      },
+      "transactions": [],
+      "signature_history": [
+        "123456789",
+        "hello@redwoodlabs.io::5559012345",
+        "redwoodlabs::640riverfrontplazastlouismo"
+      ]
+    },
+    {
+      "record_id": "customer_0008_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Labs, Redwood",
+        "email": "hello@redwoodlabs.io",
+        "phone": "555-901-2345",
+        "address": "640 Riverfront Plaza, St. Louis, MO",
+        "tax_id": "123456789"
+      },
+      "normalized_attributes": {
+        "name": "labsredwood",
+        "email": "hello@redwoodlabs.io",
+        "phone": "5559012345",
+        "address": "640riverfrontplazastlouismo",
+        "tax_id": "123456789"
+      },
+      "transactions": [],
+      "signature_history": [
+        "123456789",
+        "hello@redwoodlabs.io::5559012345",
+        "labsredwood::640riverfrontplazastlouismo"
+      ]
+    },
+    {
+      "record_id": "customer_0008_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Redwood Labs",
+        "email": "hello@redwoodlabs.io",
+        "phone": "(555) 901-2345",
+        "address": "640 Riverfront Plaza",
+        "tax_id": "123456789"
+      },
+      "normalized_attributes": {
+        "name": "redwoodlabs",
+        "email": "hello@redwoodlabs.io",
+        "phone": "5559012345",
+        "address": "640riverfrontplaza",
+        "tax_id": "123456789"
+      },
+      "transactions": [],
+      "signature_history": [
+        "123456789",
+        "hello@redwoodlabs.io::5559012345",
+        "redwoodlabs::640riverfrontplaza"
+      ]
+    }
+  ],
+  "transactions": [],
+  "signatures": {
+    "customer_0008_var001": "redwoodlabs::640riverfrontplazastlouismo",
+    "customer_0008_var002": "labsredwood::640riverfrontplazastlouismo",
+    "customer_0008_var003": "redwoodlabs::640riverfrontplaza"
+  }
+}

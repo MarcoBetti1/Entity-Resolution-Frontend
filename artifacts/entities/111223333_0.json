@@ -1,0 +1,308 @@
+{
+  "group_id": "111223333_0",
+  "canonical_attributes": {
+    "name": "janedoe",
+    "email": "janedoe@example.com",
+    "phone": "5551234567",
+    "address": "123mainstreetspringfieldil",
+    "tax_id": "111223333"
+  },
+  "members": [
+    {
+      "record_id": "business_0000_var001",
+      "entity_type": "business",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000001",
+          "direction": "incoming",
+          "counterparty_id": "customer_0000_var001",
+          "amount": 1500.0,
+          "currency": "USD",
+          "timestamp": "2024-12-27T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "business_0000_var002",
+      "entity_type": "business",
+      "attributes": {
+        "name": "JANE DOE",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "business_0000_var003",
+      "entity_type": "business",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "janedoe@example.com",
+        "phone": "(555) 123-4567",
+        "address": "123 Main Street",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreet",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreet"
+      ]
+    },
+    {
+      "record_id": "counterparty_0000_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000003",
+          "direction": "incoming",
+          "counterparty_id": "customer_0000_var001",
+          "amount": 900.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-17T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "counterparty_0000_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Doe, Jane",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "doejane",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "doejane::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "counterparty_0000_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "janedoe@example.com",
+        "phone": "(555) 123-4567",
+        "address": "123 Main Street",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreet",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreet"
+      ]
+    },
+    {
+      "record_id": "customer_0000_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000001",
+          "direction": "outgoing",
+          "counterparty_id": "business_0000_var001",
+          "amount": 1500.0,
+          "currency": "USD",
+          "timestamp": "2024-12-27T12:00:00"
+        },
+        {
+          "transaction_id": "txn_000003",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0000_var001",
+          "amount": 900.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-17T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "customer_0000_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Doe, Jane",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567",
+        "address": "123 Main Street, Springfield, IL",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "doejane",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreetspringfieldil",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "doejane::123mainstreetspringfieldil"
+      ]
+    },
+    {
+      "record_id": "customer_0000_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Jane Doe",
+        "email": "janedoe@example.com",
+        "phone": "(555) 123-4567",
+        "address": "123 Main Street",
+        "tax_id": "111223333"
+      },
+      "normalized_attributes": {
+        "name": "janedoe",
+        "email": "janedoe@example.com",
+        "phone": "5551234567",
+        "address": "123mainstreet",
+        "tax_id": "111223333"
+      },
+      "transactions": [],
+      "signature_history": [
+        "111223333",
+        "janedoe@example.com::5551234567",
+        "janedoe::123mainstreet"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000001",
+      "direction": "incoming",
+      "counterparty_id": "customer_0000_var001",
+      "amount": 1500.0,
+      "currency": "USD",
+      "timestamp": "2024-12-27T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000003",
+      "direction": "incoming",
+      "counterparty_id": "customer_0000_var001",
+      "amount": 900.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-17T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000001",
+      "direction": "outgoing",
+      "counterparty_id": "business_0000_var001",
+      "amount": 1500.0,
+      "currency": "USD",
+      "timestamp": "2024-12-27T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000003",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0000_var001",
+      "amount": 900.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-17T12:00:00"
+    }
+  ],
+  "signatures": {
+    "business_0000_var001": "janedoe::123mainstreetspringfieldil",
+    "business_0000_var002": "janedoe::123mainstreetspringfieldil",
+    "business_0000_var003": "janedoe::123mainstreet",
+    "counterparty_0000_var001": "janedoe::123mainstreetspringfieldil",
+    "counterparty_0000_var002": "doejane::123mainstreetspringfieldil",
+    "counterparty_0000_var003": "janedoe::123mainstreet",
+    "customer_0000_var001": "janedoe::123mainstreetspringfieldil",
+    "customer_0000_var002": "doejane::123mainstreetspringfieldil",
+    "customer_0000_var003": "janedoe::123mainstreet"
+  }
+}

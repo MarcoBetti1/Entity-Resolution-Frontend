@@ -1,0 +1,275 @@
+{
+  "group_id": "778899001_0",
+  "canonical_attributes": {
+    "name": "beaconpartners",
+    "email": "partners@beaconpartners.com",
+    "phone": "5550912345",
+    "address": "410pacificterracesanfranciscoca",
+    "tax_id": "778899001"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0018_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000029",
+          "direction": "incoming",
+          "counterparty_id": "customer_0018_var001",
+          "amount": 3600.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-09T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "counterparty_0018_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Partners, Beacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "partnersbeacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "partnersbeacon::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "counterparty_0018_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "(555) 091-2345",
+        "address": "410 Pacific Terrace",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterrace",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterrace"
+      ]
+    },
+    {
+      "record_id": "customer_0018_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000029",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0018_var001",
+          "amount": 3600.0,
+          "currency": "EUR",
+          "timestamp": "2024-08-09T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "customer_0018_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Partners, Beacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "partnersbeacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "partnersbeacon::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "customer_0018_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "(555) 091-2345",
+        "address": "410 Pacific Terrace",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterrace",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterrace"
+      ]
+    },
+    {
+      "record_id": "customer_0038_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "customer_0038_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Partners, Beacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "555-091-2345",
+        "address": "410 Pacific Terrace, San Francisco, CA",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "partnersbeacon",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterracesanfranciscoca",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "partnersbeacon::410pacificterracesanfranciscoca"
+      ]
+    },
+    {
+      "record_id": "customer_0038_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Beacon Partners",
+        "email": "partners@beaconpartners.com",
+        "phone": "(555) 091-2345",
+        "address": "410 Pacific Terrace",
+        "tax_id": "778899001"
+      },
+      "normalized_attributes": {
+        "name": "beaconpartners",
+        "email": "partners@beaconpartners.com",
+        "phone": "5550912345",
+        "address": "410pacificterrace",
+        "tax_id": "778899001"
+      },
+      "transactions": [],
+      "signature_history": [
+        "778899001",
+        "partners@beaconpartners.com::5550912345",
+        "beaconpartners::410pacificterrace"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000029",
+      "direction": "incoming",
+      "counterparty_id": "customer_0018_var001",
+      "amount": 3600.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-09T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000029",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0018_var001",
+      "amount": 3600.0,
+      "currency": "EUR",
+      "timestamp": "2024-08-09T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0018_var001": "beaconpartners::410pacificterracesanfranciscoca",
+    "counterparty_0018_var002": "partnersbeacon::410pacificterracesanfranciscoca",
+    "counterparty_0018_var003": "beaconpartners::410pacificterrace",
+    "customer_0018_var001": "beaconpartners::410pacificterracesanfranciscoca",
+    "customer_0018_var002": "partnersbeacon::410pacificterracesanfranciscoca",
+    "customer_0018_var003": "beaconpartners::410pacificterrace",
+    "customer_0038_var001": "beaconpartners::410pacificterracesanfranciscoca",
+    "customer_0038_var002": "partnersbeacon::410pacificterracesanfranciscoca",
+    "customer_0038_var003": "beaconpartners::410pacificterrace"
+  }
+}

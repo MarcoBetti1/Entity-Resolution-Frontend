@@ -1,0 +1,90 @@
+{
+  "group_id": "888990000_0",
+  "canonical_attributes": {
+    "name": "greenventures",
+    "email": "contact@greenventures.com",
+    "phone": "5558901234",
+    "address": "2500innovationdrivesanjoseca",
+    "tax_id": "888990000"
+  },
+  "members": [
+    {
+      "record_id": "customer_0007_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Green Ventures",
+        "email": "contact@greenventures.com",
+        "phone": "555-890-1234",
+        "address": "2500 Innovation Drive, San Jose, CA",
+        "tax_id": "888990000"
+      },
+      "normalized_attributes": {
+        "name": "greenventures",
+        "email": "contact@greenventures.com",
+        "phone": "5558901234",
+        "address": "2500innovationdrivesanjoseca",
+        "tax_id": "888990000"
+      },
+      "transactions": [],
+      "signature_history": [
+        "888990000",
+        "contact@greenventures.com::5558901234",
+        "greenventures::2500innovationdrivesanjoseca"
+      ]
+    },
+    {
+      "record_id": "customer_0007_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Ventures, Green",
+        "email": "contact@greenventures.com",
+        "phone": "555-890-1234",
+        "address": "2500 Innovation Drive, San Jose, CA",
+        "tax_id": "888990000"
+      },
+      "normalized_attributes": {
+        "name": "venturesgreen",
+        "email": "contact@greenventures.com",
+        "phone": "5558901234",
+        "address": "2500innovationdrivesanjoseca",
+        "tax_id": "888990000"
+      },
+      "transactions": [],
+      "signature_history": [
+        "888990000",
+        "contact@greenventures.com::5558901234",
+        "venturesgreen::2500innovationdrivesanjoseca"
+      ]
+    },
+    {
+      "record_id": "customer_0007_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Green Ventures",
+        "email": "contact@greenventures.com",
+        "phone": "(555) 890-1234",
+        "address": "2500 Innovation Drive",
+        "tax_id": "888990000"
+      },
+      "normalized_attributes": {
+        "name": "greenventures",
+        "email": "contact@greenventures.com",
+        "phone": "5558901234",
+        "address": "2500innovationdrive",
+        "tax_id": "888990000"
+      },
+      "transactions": [],
+      "signature_history": [
+        "888990000",
+        "contact@greenventures.com::5558901234",
+        "greenventures::2500innovationdrive"
+      ]
+    }
+  ],
+  "transactions": [],
+  "signatures": {
+    "customer_0007_var001": "greenventures::2500innovationdrivesanjoseca",
+    "customer_0007_var002": "venturesgreen::2500innovationdrivesanjoseca",
+    "customer_0007_var003": "greenventures::2500innovationdrive"
+  }
+}

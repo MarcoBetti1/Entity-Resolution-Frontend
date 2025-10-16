@@ -1,0 +1,200 @@
+{
+  "group_id": "333445555_0",
+  "canonical_attributes": {
+    "name": "mariahernandez",
+    "email": "mariah@samplemail.com",
+    "phone": "5553456789",
+    "address": "789cedarroadportlandor",
+    "tax_id": "333445555"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0002_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Maria Hernandez",
+        "email": "maria.h@samplemail.com",
+        "phone": "555-345-6789",
+        "address": "789 Cedar Road, Portland, OR",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "mariahernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroadportlandor",
+        "tax_id": "333445555"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000005",
+          "direction": "incoming",
+          "counterparty_id": "customer_0002_var001",
+          "amount": 1200.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-07T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "mariahernandez::789cedarroadportlandor"
+      ]
+    },
+    {
+      "record_id": "counterparty_0002_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Hernandez, Maria",
+        "email": "maria.h@samplemail.com",
+        "phone": "555-345-6789",
+        "address": "789 Cedar Road, Portland, OR",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "hernandezmaria",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroadportlandor",
+        "tax_id": "333445555"
+      },
+      "transactions": [],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "hernandezmaria::789cedarroadportlandor"
+      ]
+    },
+    {
+      "record_id": "counterparty_0002_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Maria Hernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "(555) 345-6789",
+        "address": "789 Cedar Road",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "mariahernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroad",
+        "tax_id": "333445555"
+      },
+      "transactions": [],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "mariahernandez::789cedarroad"
+      ]
+    },
+    {
+      "record_id": "customer_0002_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Maria Hernandez",
+        "email": "maria.h@samplemail.com",
+        "phone": "555-345-6789",
+        "address": "789 Cedar Road, Portland, OR",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "mariahernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroadportlandor",
+        "tax_id": "333445555"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000005",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0002_var001",
+          "amount": 1200.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-07T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "mariahernandez::789cedarroadportlandor"
+      ]
+    },
+    {
+      "record_id": "customer_0002_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Hernandez, Maria",
+        "email": "maria.h@samplemail.com",
+        "phone": "555-345-6789",
+        "address": "789 Cedar Road, Portland, OR",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "hernandezmaria",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroadportlandor",
+        "tax_id": "333445555"
+      },
+      "transactions": [],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "hernandezmaria::789cedarroadportlandor"
+      ]
+    },
+    {
+      "record_id": "customer_0002_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Maria Hernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "(555) 345-6789",
+        "address": "789 Cedar Road",
+        "tax_id": "333445555"
+      },
+      "normalized_attributes": {
+        "name": "mariahernandez",
+        "email": "mariah@samplemail.com",
+        "phone": "5553456789",
+        "address": "789cedarroad",
+        "tax_id": "333445555"
+      },
+      "transactions": [],
+      "signature_history": [
+        "333445555",
+        "mariah@samplemail.com::5553456789",
+        "mariahernandez::789cedarroad"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000005",
+      "direction": "incoming",
+      "counterparty_id": "customer_0002_var001",
+      "amount": 1200.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-07T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000005",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0002_var001",
+      "amount": 1200.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-07T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0002_var001": "mariahernandez::789cedarroadportlandor",
+    "counterparty_0002_var002": "hernandezmaria::789cedarroadportlandor",
+    "counterparty_0002_var003": "mariahernandez::789cedarroad",
+    "customer_0002_var001": "mariahernandez::789cedarroadportlandor",
+    "customer_0002_var002": "hernandezmaria::789cedarroadportlandor",
+    "customer_0002_var003": "mariahernandez::789cedarroad"
+  }
+}

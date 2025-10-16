@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entity Resolution Explorer</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="app-header">
+        <div>
+          <h1 id="app-title">Entity Resolution Explorer</h1>
+          <p class="app-subtitle">Investigate entity groups and review suspicious activity.</p>
+        </div>
+        <button id="refresh-artifacts" class="btn btn-secondary" type="button">Refresh Artifacts</button>
+      </header>
+      <main class="app-main">
+        <section class="filters-bar panel">
+          <form id="filter-form" class="filter-form filter-form-horizontal">
+            <div class="filter-fields">
+              <label class="filter-field">
+                <span>Min Risk</span>
+                <input id="min-risk" name="min_risk" type="number" min="0" max="100" value="0">
+              </label>
+              <label class="filter-field">
+                <span>Min Total</span>
+                <input id="min-total" name="min_total" type="number" min="0" step="0.01" value="0">
+              </label>
+              <label class="filter-field">
+                <span>Max Total</span>
+                <input id="max-total" name="max_total" type="number" min="0" step="0.01" value="0">
+              </label>
+              <label class="filter-field">
+                <span>Start Date</span>
+                <input id="start-date" name="start_date" type="date">
+              </label>
+              <label class="filter-field">
+                <span>End Date</span>
+                <input id="end-date" name="end_date" type="date">
+              </label>
+              <label class="filter-checkbox">
+                <input id="reported-only" name="reported_only" type="checkbox">
+                <span>Reported only</span>
+              </label>
+            </div>
+            <div class="filter-actions">
+              <button class="btn btn-primary" type="submit">Apply</button>
+              <button class="btn btn-tertiary" type="button" id="reset-filters">Reset</button>
+            </div>
+          </form>
+        </section>
+        <div class="content-layout">
+          <aside class="panel panel-sidebar">
+          <section class="panel-section">
+            <h2>Dataset Info</h2>
+            <div id="dataset-info" class="dataset-info"></div>
+          </section>
+          <section class="panel-section">
+            <h2>Snapshots</h2>
+            <ul id="snapshot-list" class="snapshot-list"></ul>
+          </section>
+          <section class="panel-section">
+            <h2>Reports</h2>
+            <ul id="report-list" class="report-list"></ul>
+          </section>
+          </aside>
+          <section class="panel panel-content">
+            <div class="groups-detail-grid">
+              <section class="panel-section groups-panel" id="groups-section">
+                <div class="section-header">
+                  <h2>Groups</h2>
+                  <div id="summary-info" class="summary-info"></div>
+                </div>
+                <div class="groups-scroll">
+                  <div id="groups-table-container" class="table-container"></div>
+                </div>
+              </section>
+              <section class="panel-section detail-panel" id="detail-section">
+                <div class="section-header">
+                  <h2>Group Detail</h2>
+                </div>
+                <div id="detail-container" class="detail-container empty">Select a group to see details.</div>
+              </section>
+            </div>
+            <section class="panel-section" id="network-section">
+              <h2>Network View</h2>
+              <div id="network-container" class="network-container">
+                <div id="network-status" class="empty-state">Load groups to view connections.</div>
+                <div id="network-graph" class="network-graph"></div>
+                <div id="network-table-container" class="network-table-container"></div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </main>
+      <footer class="app-footer">
+        <span id="footer-run"></span>
+        <span id="footer-generated"></span>
+        <span id="footer-reports"></span>
+      </footer>
+    </div>
+    <script type="module" src="/assets/app.js"></script>
+  </body>
+</html>

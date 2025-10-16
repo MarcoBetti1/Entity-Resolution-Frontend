@@ -1,0 +1,16 @@
+{
+  "ui": {
+    "title": "Entity Resolution Explorer",
+    "defaultHighlightReported": true,
+    "defaultShowSummaries": true
+  },
+  "reporting": {
+    "checks": [
+      "shared tax id",
+      "rapid transfer chain",
+      "circular flow",
+      "high velocity counterparties",
+      "mismatched jurisdiction"
+    ]
+  }
+}

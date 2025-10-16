@@ -1,0 +1,200 @@
+{
+  "group_id": "444556666_0",
+  "canonical_attributes": {
+    "name": "tobiasreed",
+    "email": "reedt@finmail.com",
+    "phone": "5554567890",
+    "address": "42marketstreetbostonma",
+    "tax_id": "444556666"
+  },
+  "members": [
+    {
+      "record_id": "counterparty_0003_var001",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Tobias Reed",
+        "email": "reed.t@finmail.com",
+        "phone": "555-456-7890",
+        "address": "42 Market Street, Boston, MA",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "tobiasreed",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreetbostonma",
+        "tax_id": "444556666"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000006",
+          "direction": "incoming",
+          "counterparty_id": "customer_0003_var001",
+          "amount": 1350.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-02T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "tobiasreed::42marketstreetbostonma"
+      ]
+    },
+    {
+      "record_id": "counterparty_0003_var002",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Reed, Tobias",
+        "email": "reed.t@finmail.com",
+        "phone": "555-456-7890",
+        "address": "42 Market Street, Boston, MA",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "reedtobias",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreetbostonma",
+        "tax_id": "444556666"
+      },
+      "transactions": [],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "reedtobias::42marketstreetbostonma"
+      ]
+    },
+    {
+      "record_id": "counterparty_0003_var003",
+      "entity_type": "counterparty",
+      "attributes": {
+        "name": "Tobias Reed",
+        "email": "reedt@finmail.com",
+        "phone": "(555) 456-7890",
+        "address": "42 Market Street",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "tobiasreed",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreet",
+        "tax_id": "444556666"
+      },
+      "transactions": [],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "tobiasreed::42marketstreet"
+      ]
+    },
+    {
+      "record_id": "customer_0003_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Tobias Reed",
+        "email": "reed.t@finmail.com",
+        "phone": "555-456-7890",
+        "address": "42 Market Street, Boston, MA",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "tobiasreed",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreetbostonma",
+        "tax_id": "444556666"
+      },
+      "transactions": [
+        {
+          "transaction_id": "txn_000006",
+          "direction": "outgoing",
+          "counterparty_id": "counterparty_0003_var001",
+          "amount": 1350.0,
+          "currency": "EUR",
+          "timestamp": "2024-12-02T12:00:00"
+        }
+      ],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "tobiasreed::42marketstreetbostonma"
+      ]
+    },
+    {
+      "record_id": "customer_0003_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Reed, Tobias",
+        "email": "reed.t@finmail.com",
+        "phone": "555-456-7890",
+        "address": "42 Market Street, Boston, MA",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "reedtobias",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreetbostonma",
+        "tax_id": "444556666"
+      },
+      "transactions": [],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "reedtobias::42marketstreetbostonma"
+      ]
+    },
+    {
+      "record_id": "customer_0003_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Tobias Reed",
+        "email": "reedt@finmail.com",
+        "phone": "(555) 456-7890",
+        "address": "42 Market Street",
+        "tax_id": "444556666"
+      },
+      "normalized_attributes": {
+        "name": "tobiasreed",
+        "email": "reedt@finmail.com",
+        "phone": "5554567890",
+        "address": "42marketstreet",
+        "tax_id": "444556666"
+      },
+      "transactions": [],
+      "signature_history": [
+        "444556666",
+        "reedt@finmail.com::5554567890",
+        "tobiasreed::42marketstreet"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn_000006",
+      "direction": "incoming",
+      "counterparty_id": "customer_0003_var001",
+      "amount": 1350.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-02T12:00:00"
+    },
+    {
+      "transaction_id": "txn_000006",
+      "direction": "outgoing",
+      "counterparty_id": "counterparty_0003_var001",
+      "amount": 1350.0,
+      "currency": "EUR",
+      "timestamp": "2024-12-02T12:00:00"
+    }
+  ],
+  "signatures": {
+    "counterparty_0003_var001": "tobiasreed::42marketstreetbostonma",
+    "counterparty_0003_var002": "reedtobias::42marketstreetbostonma",
+    "counterparty_0003_var003": "tobiasreed::42marketstreet",
+    "customer_0003_var001": "tobiasreed::42marketstreetbostonma",
+    "customer_0003_var002": "reedtobias::42marketstreetbostonma",
+    "customer_0003_var003": "tobiasreed::42marketstreet"
+  }
+}

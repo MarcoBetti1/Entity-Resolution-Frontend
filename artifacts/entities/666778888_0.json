@@ -1,0 +1,90 @@
+{
+  "group_id": "666778888_0",
+  "canonical_attributes": {
+    "name": "ahmedkhan",
+    "email": "ahmedkhan@network.com",
+    "phone": "5556789012",
+    "address": "17harbourwayseattlewa",
+    "tax_id": "666778888"
+  },
+  "members": [
+    {
+      "record_id": "customer_0005_var001",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Ahmed Khan",
+        "email": "ahmed.khan@network.com",
+        "phone": "555-678-9012",
+        "address": "17 Harbour Way, Seattle, WA",
+        "tax_id": "666778888"
+      },
+      "normalized_attributes": {
+        "name": "ahmedkhan",
+        "email": "ahmedkhan@network.com",
+        "phone": "5556789012",
+        "address": "17harbourwayseattlewa",
+        "tax_id": "666778888"
+      },
+      "transactions": [],
+      "signature_history": [
+        "666778888",
+        "ahmedkhan@network.com::5556789012",
+        "ahmedkhan::17harbourwayseattlewa"
+      ]
+    },
+    {
+      "record_id": "customer_0005_var002",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Khan, Ahmed",
+        "email": "ahmed.khan@network.com",
+        "phone": "555-678-9012",
+        "address": "17 Harbour Way, Seattle, WA",
+        "tax_id": "666778888"
+      },
+      "normalized_attributes": {
+        "name": "khanahmed",
+        "email": "ahmedkhan@network.com",
+        "phone": "5556789012",
+        "address": "17harbourwayseattlewa",
+        "tax_id": "666778888"
+      },
+      "transactions": [],
+      "signature_history": [
+        "666778888",
+        "ahmedkhan@network.com::5556789012",
+        "khanahmed::17harbourwayseattlewa"
+      ]
+    },
+    {
+      "record_id": "customer_0005_var003",
+      "entity_type": "customer",
+      "attributes": {
+        "name": "Ahmed Khan",
+        "email": "ahmedkhan@network.com",
+        "phone": "(555) 678-9012",
+        "address": "17 Harbour Way",
+        "tax_id": "666778888"
+      },
+      "normalized_attributes": {
+        "name": "ahmedkhan",
+        "email": "ahmedkhan@network.com",
+        "phone": "5556789012",
+        "address": "17harbourway",
+        "tax_id": "666778888"
+      },
+      "transactions": [],
+      "signature_history": [
+        "666778888",
+        "ahmedkhan@network.com::5556789012",
+        "ahmedkhan::17harbourway"
+      ]
+    }
+  ],
+  "transactions": [],
+  "signatures": {
+    "customer_0005_var001": "ahmedkhan::17harbourwayseattlewa",
+    "customer_0005_var002": "khanahmed::17harbourwayseattlewa",
+    "customer_0005_var003": "ahmedkhan::17harbourway"
+  }
+}
